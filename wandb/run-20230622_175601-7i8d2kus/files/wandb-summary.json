@@ -1,0 +1,1 @@
+{"graph_0": {"_type": "graph-file", "sha256": "7f2195d1efe2f16b0e756b63e022cab5b204ca8cd1d3170e918355623f17183e", "size": 31192, "path": "media/graph/graph_0_summary_7f2195d1efe2f16b0e75.graph.json"}, "train_loss_batch": 15.829962730407715, "epoch": 0, "trainer/global_step": 49, "_timestamp": 1687449418.8695993, "_runtime": 57.3755202293396, "_step": 1, "_wandb": {"runtime": 59}}

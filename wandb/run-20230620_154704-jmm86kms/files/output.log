@@ -1,0 +1,24 @@
+/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/site-packages/pytorch_lightning/loggers/wandb.py:396: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py:441: LightningDeprecationWarning: Setting `Trainer(gpus=1)` is deprecated in v1.7 and will be removed in v2.0. Please use `Trainer(accelerator='gpu', devices=1)` instead.
+  rank_zero_deprecation(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/site-packages/torch/cuda/__init__.py:106: UserWarning:
+NVIDIA GeForce RTX 3090 with CUDA capability sm_86 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60 sm_70.
+If you want to use the NVIDIA GeForce RTX 3090 GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+  warnings.warn(incompatible_device_warn.format(device_name, capability, " ".join(arch_list), device_name))
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name            | Type             | Params
+-----------------------------------------------------
+0 | gloss_encoder   | GlossEncoder     | 108 M
+1 | context_encoder | ContextEncoder   | 108 M
+2 | loss            | CrossEntropyLoss | 0
+-----------------------------------------------------
+216 M     Trainable params
+0         Non-trainable params
+216 M     Total params
+866.482   Total estimated model params size (MB)

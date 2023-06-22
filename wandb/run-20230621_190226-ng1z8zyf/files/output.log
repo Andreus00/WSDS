@@ -1,0 +1,89 @@
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loggers/wandb.py:396: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+You are using a CUDA device ('NVIDIA GeForce RTX 3090') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name            | Type             | Params
+-----------------------------------------------------
+0 | gloss_encoder   | GlossEncoder     | 108 M
+1 | context_encoder | ContextEncoder   | 108 M
+2 | loss            | CrossEntropyLoss | 0
+3 | cc              | CosineSimilarity | 0
+-----------------------------------------------------
+216 M     Trainable params
+0         Non-trainable params
+216 M     Total params
+866.482   Total estimated model params size (MB)
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:432: PossibleUserWarning: The dataloader, val_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 20 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/utilities/data.py:120: UserWarning: Your `IterableDataset` has `__len__` defined. In combination with multi-process data loading (when num_workers > 1), `__len__` could be inaccurate if each worker is not configured independently to avoid having duplicate data.
+  rank_zero_warn(
+Sanity Checking DataLoader 0:  50%|█████████████████████████████████████████████████████████████                                                             | 1/2 [00:00<00:00,  1.06it/s]
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/utilities/data.py:76: UserWarning: Trying to infer the `batch_size` from an ambiguous collection. The batch size we found is 8. To avoid any miscalculations, use `self.log(..., batch_size=batch_size)`.
+  warning_cache.warn(
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:432: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 20 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/core/module.py:707: UserWarning: `training_step` must be implemented to be used with the Lightning Trainer
+  rank_zero_warn("`training_step` must be implemented to be used with the Lightning Trainer")
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loops/optimization/automatic.py:129: UserWarning: `training_step` returned `None`. If this was on purpose, ignore this warning...
+Sanity Checking DataLoader 0: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:01<00:00,  1.09it/s]-2851.7807006835938
+
+
+Epoch 0: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2494/2494 [00:07<00:00, 312.04it/s, v_num=8zyf]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

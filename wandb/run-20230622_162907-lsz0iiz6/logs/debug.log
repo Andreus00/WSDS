@@ -1,0 +1,37 @@
+2023-06-22 16:29:07,508 INFO    Thread-7 (_run_job):903600 [wandb_setup.py:_flush():76] Configure stats pid to 903600
+2023-06-22 16:29:07,509 INFO    Thread-7 (_run_job):903600 [wandb_setup.py:_flush():76] Loading settings from /home/andrea/.config/wandb/settings
+2023-06-22 16:29:07,509 INFO    Thread-7 (_run_job):903600 [wandb_setup.py:_flush():76] Loading settings from /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/settings
+2023-06-22 16:29:07,509 INFO    Thread-7 (_run_job):903600 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'nlp2023-hw2', 'entity': 'andr3us', 'root_dir': '/home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2', 'sweep_id': '8e6v9avv', 'run_id': 'lsz0iiz6', 'sweep_param_path': '/home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/sweep-8e6v9avv/config-lsz0iiz6.yaml'}
+2023-06-22 16:29:07,509 INFO    Thread-7 (_run_job):903600 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-06-22 16:29:07,509 WARNING Thread-7 (_run_job):903600 [wandb_setup.py:_flush():76] Could not save program above cwd: /home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/train_model.py
+2023-06-22 16:29:07,509 INFO    Thread-7 (_run_job):903600 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': None, 'program': '/home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/train_model.py'}
+2023-06-22 16:29:07,509 INFO    Thread-7 (_run_job):903600 [wandb_init.py:_log_setup():507] Logging user logs to ./wandb/run-20230622_162907-lsz0iiz6/logs/debug.log
+2023-06-22 16:29:07,509 INFO    Thread-7 (_run_job):903600 [wandb_init.py:_log_setup():508] Logging internal logs to ./wandb/run-20230622_162907-lsz0iiz6/logs/debug-internal.log
+2023-06-22 16:29:07,509 INFO    Thread-7 (_run_job):903600 [wandb_init.py:init():547] calling init triggers
+2023-06-22 16:29:07,509 INFO    Thread-7 (_run_job):903600 [wandb_init.py:init():554] wandb.init called with sweep_config: {'batch_size': 8, 'epochs': 10, 'gloss_model_name': 'bert-base-cased', 'gradient_clipping': 2, 'loss': 'cross_entropy', 'lr': 0.0001, 'max_len': 128, 'sentence_model_name': 'bert-base-cased', 'weight_decay': 0}
+config: {}
+2023-06-22 16:29:07,509 INFO    Thread-7 (_run_job):903600 [wandb_init.py:init():595] starting backend
+2023-06-22 16:29:07,509 INFO    Thread-7 (_run_job):903600 [wandb_init.py:init():599] setting up manager
+2023-06-22 16:29:07,514 INFO    Thread-7 (_run_job):903600 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-06-22 16:29:07,521 INFO    Thread-7 (_run_job):903600 [wandb_init.py:init():605] backend started and connected
+2023-06-22 16:29:07,529 INFO    Thread-7 (_run_job):903600 [wandb_run.py:_config_callback():1285] config_cb None None {'batch_size': 8, 'epochs': 10, 'gloss_model_name': 'bert-base-cased', 'gradient_clipping': 2, 'loss': 'cross_entropy', 'lr': 0.0001, 'max_len': 128, 'sentence_model_name': 'bert-base-cased', 'weight_decay': 0}
+2023-06-22 16:29:07,530 INFO    Thread-7 (_run_job):903600 [wandb_init.py:init():695] updated telemetry
+2023-06-22 16:29:07,535 INFO    Thread-7 (_run_job):903600 [wandb_init.py:init():732] communicating run to backend with 60.0 second timeout
+2023-06-22 16:29:08,121 INFO    Thread-7 (_run_job):903600 [wandb_init.py:init():775] run resumed
+2023-06-22 16:29:08,129 INFO    Thread-7 (_run_job):903600 [wandb_run.py:_on_init():2176] communicating current version
+2023-06-22 16:29:08,220 INFO    Thread-7 (_run_job):903600 [wandb_run.py:_on_init():2185] got version response upgrade_message: "wandb version 0.15.4 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-06-22 16:29:08,220 INFO    Thread-7 (_run_job):903600 [wandb_init.py:init():782] starting run threads in backend
+2023-06-22 16:29:08,241 INFO    Thread-7 (_run_job):903600 [wandb_run.py:_console_start():2157] atexit reg
+2023-06-22 16:29:08,242 INFO    Thread-7 (_run_job):903600 [wandb_run.py:_redirect():2012] redirect: SettingsConsole.WRAP_RAW
+2023-06-22 16:29:08,242 INFO    Thread-7 (_run_job):903600 [wandb_run.py:_redirect():2077] Wrapping output streams.
+2023-06-22 16:29:08,242 INFO    Thread-7 (_run_job):903600 [wandb_run.py:_redirect():2102] Redirects installed.
+2023-06-22 16:29:08,243 INFO    Thread-7 (_run_job):903600 [wandb_init.py:init():824] run started, returning control to user process
+2023-06-22 16:29:23,247 INFO    Thread-7 (_run_job):903600 [wandb_watch.py:watch():51] Watching
+2023-06-22 16:29:25,992 INFO    Thread-7 (_run_job):903600 [wandb_run.py:_finish():1892] finishing run andr3us/nlp2023-hw2/lsz0iiz6
+2023-06-22 16:29:25,992 INFO    Thread-7 (_run_job):903600 [wandb_run.py:_atexit_cleanup():2126] got exitcode: 1
+2023-06-22 16:29:25,993 INFO    Thread-7 (_run_job):903600 [wandb_run.py:_restore():2109] restore
+2023-06-22 16:29:25,993 INFO    Thread-7 (_run_job):903600 [wandb_run.py:_restore():2115] restore done
+2023-06-22 16:29:30,236 INFO    Thread-7 (_run_job):903600 [wandb_run.py:_footer_history_summary_info():3476] rendering history
+2023-06-22 16:29:30,237 INFO    Thread-7 (_run_job):903600 [wandb_run.py:_footer_history_summary_info():3508] rendering summary
+2023-06-22 16:29:30,239 INFO    Thread-7 (_run_job):903600 [wandb_run.py:_footer_sync_info():3434] logging synced files

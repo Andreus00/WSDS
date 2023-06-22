@@ -1,0 +1,76 @@
+/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/site-packages/pytorch_lightning/loggers/wandb.py:396: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py:441: LightningDeprecationWarning: Setting `Trainer(gpus=1)` is deprecated in v1.7 and will be removed in v2.0. Please use `Trainer(accelerator='gpu', devices=1)` instead.
+  rank_zero_deprecation(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/site-packages/torch/cuda/__init__.py:106: UserWarning:
+NVIDIA GeForce RTX 3090 with CUDA capability sm_86 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60 sm_70.
+If you want to use the NVIDIA GeForce RTX 3090 GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+  warnings.warn(incompatible_device_warn.format(device_name, capability, " ".join(arch_list), device_name))
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name            | Type             | Params
+-----------------------------------------------------
+0 | gloss_encoder   | GlossEncoder     | 108 M
+1 | context_encoder | ContextEncoder   | 108 M
+2 | loss            | CrossEntropyLoss | 0
+-----------------------------------------------------
+216 M     Trainable params
+0         Non-trainable params
+216 M     Total params
+866.482   Total estimated model params size (MB)
+Sanity Checking: 0it [00:00, ?it/s]
+Traceback (most recent call last):
+  File "/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/__main__.py", line 39, in <module>
+    cli.main()
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/server/cli.py", line 430, in main
+    run()
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/server/cli.py", line 284, in run_file
+    runpy.run_path(target, run_name="__main__")
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "/home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/train_model.py", line 4, in <module>
+    train()
+  File "/home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/hw2/stud/train.py", line 103, in train
+    trainer.fit(model, train_dataloader, val_dataloader)
+  File "/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 603, in fit
+    call._call_and_handle_interrupt(
+  File "/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/site-packages/pytorch_lightning/trainer/call.py", line 38, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 645, in _fit_impl
+    self._run(model, ckpt_path=self.ckpt_path)
+  File "/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1098, in _run
+    results = self._run_stage()
+  File "/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1177, in _run_stage
+    self._run_train()
+  File "/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1190, in _run_train
+    self._run_sanity_check()
+  File "/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1255, in _run_sanity_check
+    val_loop._reload_evaluation_dataloaders()
+  File "/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/site-packages/pytorch_lightning/loops/dataloader/evaluation_loop.py", line 234, in _reload_evaluation_dataloaders
+    self.trainer.reset_val_dataloader()
+  File "/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1635, in reset_val_dataloader
+    self.num_val_batches, self.val_dataloaders = self._data_connector._reset_eval_dataloader(
+  File "/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py", line 391, in _reset_eval_dataloader
+    len(dataloader) if has_len_all_ranks(dataloader, self.trainer.strategy, module) else float("inf")
+  File "/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/site-packages/pytorch_lightning/utilities/data.py", line 110, in has_len_all_ranks
+    if total_length == 0:
+RuntimeError: CUDA error: no kernel image is available for execution on the device
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Exception ignored in: <module 'threading' from '/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/threading.py'>
+Traceback (most recent call last):
+  File "/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/threading.py", line 1477, in _shutdown
+    lock.acquire()
+KeyboardInterrupt:

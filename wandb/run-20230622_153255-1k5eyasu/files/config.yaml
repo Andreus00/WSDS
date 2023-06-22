@@ -1,0 +1,57 @@
+wandb_version: 1
+
+batch_size:
+  desc: null
+  value: 16
+epochs:
+  desc: null
+  value: 10
+gloss_model_name:
+  desc: null
+  value: roberta-base
+gradient_clipping:
+  desc: null
+  value: 0.5
+loss:
+  desc: null
+  value: cross_entropy
+lr:
+  desc: null
+  value: 8.0e-06
+max_len:
+  desc: null
+  value: 128
+sentence_model_name:
+  desc: null
+  value: roberta-base
+weight_decay:
+  desc: null
+  value: 0.0001
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.10
+    cli_version: 0.14.2
+    framework: huggingface
+    huggingface_version: 4.25.1
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1687440775.88234
+    t:
+      1:
+      - 1
+      - 5
+      - 9
+      - 11
+      - 41
+      - 49
+      - 53
+      - 55
+      - 71
+      3:
+      - 23
+      4: 3.10.10
+      5: 0.14.2
+      6: 4.25.1
+      8:
+      - 5

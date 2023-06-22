@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/__main__.py", line 39, in <module>
+    cli.main()
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/server/cli.py", line 430, in main
+    run()
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/server/cli.py", line 284, in run_file
+    runpy.run_path(target, run_name="__main__")
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "/home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/train_model.py", line 4, in <module>
+    train()
+  File "/home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/hw2/stud/train.py", line 26, in train
+    wandb_logger.log_hyperparams(config.__dict__)
+  File "/home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/hw2/stud/train.py", line 26, in train
+    wandb_logger.log_hyperparams(config.__dict__)
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_frame.py", line 988, in trace_dispatch
+    self.do_wait_suspend(thread, frame, event, arg)
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_frame.py", line 165, in do_wait_suspend
+    self._args[0].do_wait_suspend(*args, **kwargs)
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/pydevd.py", line 2070, in do_wait_suspend
+    keep_suspended = self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread, frames_tracker)
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/pydevd.py", line 2106, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt

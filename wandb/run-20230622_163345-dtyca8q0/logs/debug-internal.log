@@ -1,0 +1,109 @@
+2023-06-22 16:33:45,924 INFO    StreamThr :907966 [internal.py:wandb_internal():86] W&B internal server running at pid: 907966, started at: 2023-06-22 16:33:45.923663
+2023-06-22 16:33:45,926 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status
+2023-06-22 16:33:45,932 INFO    WriterThread:907966 [datastore.py:open_for_write():85] open: ./wandb/run-20230622_163345-dtyca8q0/run-dtyca8q0.wandb
+2023-06-22 16:33:45,933 DEBUG   SenderThread:907966 [sender.py:send():375] send: header
+2023-06-22 16:33:45,936 DEBUG   SenderThread:907966 [sender.py:send():375] send: run
+2023-06-22 16:33:45,944 INFO    SenderThread:907966 [sender.py:_maybe_setup_resume():761] checking resume status for andr3us/nlp2023-hw2/dtyca8q0
+2023-06-22 16:33:46,165 INFO    SenderThread:907966 [sender.py:_maybe_setup_resume():833] configured resuming with: ResumeState(resumed=True,step=1,history=0,events=0,output=0,runtime=0,wandb_runtime=None,summary={},config={'lr': {'value': 1e-06}, 'loss': {'value': 'cross_entropy'}, 'epochs': {'value': 10}, 'max_len': {'value': 128}, 'batch_size': {'value': 16}, 'weight_decay': {'value': 0}, 'gloss_model_name': {'value': 'bert-base-cased'}, 'gradient_clipping': {'value': 2}, 'sentence_model_name': {'value': 'roberta-base'}})
+2023-06-22 16:33:46,525 INFO    SenderThread:907966 [dir_watcher.py:__init__():219] watching files in: ./wandb/run-20230622_163345-dtyca8q0/files
+2023-06-22 16:33:46,525 INFO    SenderThread:907966 [sender.py:_start_run_threads():1124] run started: dtyca8q0 with start time 1687444425.9265
+2023-06-22 16:33:46,525 DEBUG   SenderThread:907966 [sender.py:send_request():402] send_request: summary_record
+2023-06-22 16:33:46,526 INFO    SenderThread:907966 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-22 16:33:46,526 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: check_version
+2023-06-22 16:33:46,527 DEBUG   SenderThread:907966 [sender.py:send_request():402] send_request: check_version
+2023-06-22 16:33:46,632 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: run_start
+2023-06-22 16:33:46,637 DEBUG   HandlerThread:907966 [system_info.py:__init__():31] System info init
+2023-06-22 16:33:46,637 DEBUG   HandlerThread:907966 [system_info.py:__init__():46] System info init done
+2023-06-22 16:33:46,637 INFO    HandlerThread:907966 [system_monitor.py:start():181] Starting system monitor
+2023-06-22 16:33:46,637 INFO    SystemMonitor:907966 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-22 16:33:46,638 INFO    SystemMonitor:907966 [interfaces.py:start():190] Started cpu monitoring
+2023-06-22 16:33:46,639 INFO    SystemMonitor:907966 [interfaces.py:start():190] Started disk monitoring
+2023-06-22 16:33:46,640 INFO    SystemMonitor:907966 [interfaces.py:start():190] Started gpu monitoring
+2023-06-22 16:33:46,641 INFO    SystemMonitor:907966 [interfaces.py:start():190] Started memory monitoring
+2023-06-22 16:33:46,642 INFO    SystemMonitor:907966 [interfaces.py:start():190] Started network monitoring
+2023-06-22 16:33:46,649 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 16:33:46,649 DEBUG   SenderThread:907966 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 16:33:46,800 DEBUG   SenderThread:907966 [sender.py:send():375] send: telemetry
+2023-06-22 16:33:46,800 DEBUG   SenderThread:907966 [sender.py:send():375] send: metric
+2023-06-22 16:33:46,801 DEBUG   SenderThread:907966 [sender.py:send():375] send: telemetry
+2023-06-22 16:33:46,801 DEBUG   SenderThread:907966 [sender.py:send():375] send: metric
+2023-06-22 16:33:46,801 WARNING SenderThread:907966 [sender.py:send_metric():1329] Seen metric with glob (shouldn't happen)
+2023-06-22 16:33:47,527 INFO    Thread-17 :907966 [dir_watcher.py:_on_file_created():278] file/dir created: ./wandb/run-20230622_163345-dtyca8q0/files/wandb-summary.json
+2023-06-22 16:33:51,802 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:33:56,802 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:34:01,649 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 16:34:01,649 DEBUG   SenderThread:907966 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 16:34:02,798 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:34:03,528 INFO    Thread-17 :907966 [dir_watcher.py:_on_file_created():278] file/dir created: ./wandb/run-20230622_163345-dtyca8q0/files/output.log
+2023-06-22 16:34:03,926 DEBUG   SenderThread:907966 [sender.py:send():375] send: telemetry
+2023-06-22 16:34:05,529 INFO    Thread-17 :907966 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_163345-dtyca8q0/files/output.log
+2023-06-22 16:34:06,107 DEBUG   SenderThread:907966 [sender.py:send():375] send: files
+2023-06-22 16:34:06,107 INFO    SenderThread:907966 [sender.py:_save_file():1378] saving file media/graph/graph_0_summary_9fee0450b909e4d51fb4.graph.json with policy now
+2023-06-22 16:34:06,107 DEBUG   SenderThread:907966 [sender.py:send_request():402] send_request: summary_record
+2023-06-22 16:34:06,108 INFO    SenderThread:907966 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-22 16:34:06,530 INFO    Thread-17 :907966 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_163345-dtyca8q0/files/wandb-summary.json
+2023-06-22 16:34:06,530 INFO    Thread-17 :907966 [dir_watcher.py:_on_file_created():278] file/dir created: ./wandb/run-20230622_163345-dtyca8q0/files/media/graph/graph_0_summary_9fee0450b909e4d51fb4.graph.json
+2023-06-22 16:34:06,530 INFO    Thread-17 :907966 [dir_watcher.py:_on_file_created():278] file/dir created: ./wandb/run-20230622_163345-dtyca8q0/files/media
+2023-06-22 16:34:06,530 INFO    Thread-17 :907966 [dir_watcher.py:_on_file_created():278] file/dir created: ./wandb/run-20230622_163345-dtyca8q0/files/media/graph
+2023-06-22 16:34:06,650 INFO    wandb-upload_0:907966 [upload_job.py:push():137] Uploaded file /tmp/tmp54ds06b4wandb/9ln9dqax-media/graph/graph_0_summary_9fee0450b909e4d51fb4.graph.json
+2023-06-22 16:34:07,163 INFO    wandb-upload_0:907966 [upload_job.py:push():137] Uploaded file /tmp/tmp54ds06b4wandb/figkd50p-media/graph/graph_0_summary_9fee0450b909e4d51fb4.graph.json
+2023-06-22 16:34:07,530 INFO    Thread-17 :907966 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_163345-dtyca8q0/files/output.log
+2023-06-22 16:34:07,840 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:34:09,531 INFO    Thread-17 :907966 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_163345-dtyca8q0/files/output.log
+2023-06-22 16:34:11,532 INFO    Thread-17 :907966 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_163345-dtyca8q0/files/output.log
+2023-06-22 16:34:13,147 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:34:13,533 INFO    Thread-17 :907966 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_163345-dtyca8q0/files/output.log
+2023-06-22 16:34:15,533 INFO    Thread-17 :907966 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_163345-dtyca8q0/files/output.log
+2023-06-22 16:34:16,649 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 16:34:16,649 DEBUG   SenderThread:907966 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 16:34:17,534 INFO    Thread-17 :907966 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_163345-dtyca8q0/files/output.log
+2023-06-22 16:34:18,752 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:34:19,535 INFO    Thread-17 :907966 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_163345-dtyca8q0/files/config.yaml
+2023-06-22 16:34:19,535 INFO    Thread-17 :907966 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_163345-dtyca8q0/files/output.log
+2023-06-22 16:34:21,535 INFO    Thread-17 :907966 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_163345-dtyca8q0/files/output.log
+2023-06-22 16:34:23,536 INFO    Thread-17 :907966 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_163345-dtyca8q0/files/output.log
+2023-06-22 16:34:24,480 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:34:25,536 INFO    Thread-17 :907966 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_163345-dtyca8q0/files/output.log
+2023-06-22 16:34:27,537 INFO    Thread-17 :907966 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_163345-dtyca8q0/files/output.log
+2023-06-22 16:34:29,538 INFO    Thread-17 :907966 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_163345-dtyca8q0/files/output.log
+2023-06-22 16:34:29,577 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:34:31,539 INFO    Thread-17 :907966 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_163345-dtyca8q0/files/output.log
+2023-06-22 16:34:31,649 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 16:34:31,650 DEBUG   SenderThread:907966 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 16:34:34,798 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:34:37,672 INFO    Thread-17 :907966 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_163345-dtyca8q0/files/output.log
+2023-06-22 16:34:40,441 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:34:40,530 INFO    Thread-17 :907966 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_163345-dtyca8q0/files/output.log
+2023-06-22 16:34:43,517 INFO    Thread-17 :907966 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_163345-dtyca8q0/files/output.log
+2023-06-22 16:34:45,518 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:34:46,642 DEBUG   SystemMonitor:907966 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-22 16:34:46,644 DEBUG   SenderThread:907966 [sender.py:send():375] send: stats
+2023-06-22 16:34:46,649 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 16:34:46,650 DEBUG   SenderThread:907966 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 16:34:50,797 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:34:55,798 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:35:00,798 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:35:01,649 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 16:35:01,650 DEBUG   SenderThread:907966 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 16:35:05,805 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:35:10,806 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:35:15,806 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:35:16,644 DEBUG   SenderThread:907966 [sender.py:send():375] send: stats
+2023-06-22 16:35:16,649 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 16:35:16,650 DEBUG   SenderThread:907966 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 16:35:21,802 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:35:26,803 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:35:31,650 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 16:35:31,650 DEBUG   SenderThread:907966 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 16:35:31,822 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:35:36,822 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:35:41,823 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:35:46,645 DEBUG   SenderThread:907966 [sender.py:send():375] send: stats
+2023-06-22 16:35:46,650 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 16:35:46,650 DEBUG   SenderThread:907966 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 16:35:47,805 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:35:52,805 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:35:57,806 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:36:01,650 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 16:36:01,650 DEBUG   SenderThread:907966 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 16:36:02,811 DEBUG   HandlerThread:907966 [handler.py:handle_request():144] handle_request: status_report

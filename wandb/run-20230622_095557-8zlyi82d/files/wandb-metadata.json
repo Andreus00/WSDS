@@ -1,0 +1,144 @@
+{
+    "os": "Linux-5.15.0-75-generic-x86_64-with-glibc2.35",
+    "python": "3.10.10",
+    "heartbeatAt": "2023-06-22T07:55:58.008147",
+    "startedAt": "2023-06-22T07:55:57.464554",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/train_model.py",
+    "git": {
+        "remote": "https://github.com/SapienzaNLP/nlp2023-hw2.git",
+        "commit": "e09072800dbc48addb060d7e09ea96728343636f"
+    },
+    "email": "sanchietti.1883210@studenti.uniroma1.it",
+    "root": "/home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2",
+    "host": "andrea-Pc",
+    "username": "andrea",
+    "executable": "/home/andrea/miniconda3/envs/cla-transformer/bin/python",
+    "cpu_count": 12,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 2223.4944,
+        "min": 800.0,
+        "max": 4580.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4569.888,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3600.0
+        }
+    ],
+    "disk": {
+        "total": 250.59968948364258,
+        "used": 185.21629333496094
+    },
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 31.15399169921875
+    }
+}

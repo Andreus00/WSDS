@@ -1,0 +1,26 @@
+/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/site-packages/pytorch_lightning/loggers/wandb.py:396: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py:441: LightningDeprecationWarning: Setting `Trainer(gpus=1)` is deprecated in v1.7 and will be removed in v2.0. Please use `Trainer(accelerator='gpu', devices=1)` instead.
+  rank_zero_deprecation(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+Traceback (most recent call last):
+  File "/home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/train_model.py", line 4, in <module>
+    train()
+  File "/home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/hw2/stud/train.py", line 103, in train
+    trainer.fit(model, train_dataloader, val_dataloader)
+  File "/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 603, in fit
+    call._call_and_handle_interrupt(
+  File "/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/site-packages/pytorch_lightning/trainer/call.py", line 38, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 645, in _fit_impl
+    self._run(model, ckpt_path=self.ckpt_path)
+  File "/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1024, in _run
+    verify_loop_configurations(self)
+  File "/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/site-packages/pytorch_lightning/trainer/configuration_validator.py", line 41, in verify_loop_configurations
+    __verify_train_val_loop_configuration(trainer, model)
+  File "/home/andrea/miniconda3/envs/nlp2023-hw2/lib/python3.9/site-packages/pytorch_lightning/trainer/configuration_validator.py", line 70, in __verify_train_val_loop_configuration
+    raise MisconfigurationException(
+lightning_lite.utilities.exceptions.MisconfigurationException: No `training_step()` method defined. Lightning `Trainer` expects as minimum a `training_step()`, `train_dataloader()` and `configure_optimizers()` to be defined.

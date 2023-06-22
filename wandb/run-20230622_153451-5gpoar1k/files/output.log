@@ -1,0 +1,193 @@
+[34m[1mwandb[39m[22m: Ctrl + C detected. Stopping sweep.
+Traceback (most recent call last):
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/__main__.py", line 39, in <module>
+    cli.main()
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/server/cli.py", line 430, in main
+    run()
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/server/cli.py", line 284, in run_file
+    runpy.run_path(target, run_name="__main__")
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "/home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/train_model.py", line 4, in <module>
+    train_sweep()
+  File "/home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/hw2/stud/train.py", line 98, in train_sweep
+    wandb.agent(sweep_id, sweep_model)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/wandb/wandb_agent.py", line 650, in agent
+    _INSTANCES -= 1
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/wandb/wandb_agent.py", line 650, in agent
+    _INSTANCES -= 1
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1600, in _pydevd_bundle.pydevd_cython.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1457, in _pydevd_bundle.pydevd_cython.SafeCallWrapper.__call__
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1834, in _pydevd_bundle.pydevd_cython.ThreadTracer.__call__
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1152, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1135, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 312, in _pydevd_bundle.pydevd_cython.PyDBFrame.do_wait_suspend
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/pydevd.py", line 2070, in do_wait_suspend
+    keep_suspended = self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread, frames_tracker)
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/pydevd.py", line 2106, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/__main__.py", line 39, in <module>
+    cli.main()
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/server/cli.py", line 430, in main
+    run()
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/server/cli.py", line 284, in run_file
+    runpy.run_path(target, run_name="__main__")
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "/home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/train_model.py", line 4, in <module>
+    train_sweep()
+  File "/home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/hw2/stud/train.py", line 98, in train_sweep
+    wandb.agent(sweep_id, sweep_model)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/wandb/wandb_agent.py", line 650, in agent
+    _INSTANCES -= 1
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/wandb/wandb_agent.py", line 650, in agent
+    _INSTANCES -= 1
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1600, in _pydevd_bundle.pydevd_cython.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1457, in _pydevd_bundle.pydevd_cython.SafeCallWrapper.__call__
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1834, in _pydevd_bundle.pydevd_cython.ThreadTracer.__call__
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1152, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1135, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 312, in _pydevd_bundle.pydevd_cython.PyDBFrame.do_wait_suspend
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/pydevd.py", line 2070, in do_wait_suspend
+    keep_suspended = self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread, frames_tracker)
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/pydevd.py", line 2106, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/__main__.py", line 39, in <module>
+    cli.main()
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/server/cli.py", line 430, in main
+    run()
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/server/cli.py", line 284, in run_file
+    runpy.run_path(target, run_name="__main__")
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "/home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/train_model.py", line 4, in <module>
+    train_sweep()
+  File "/home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/hw2/stud/train.py", line 98, in train_sweep
+    wandb.agent(sweep_id, sweep_model)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/wandb/wandb_agent.py", line 650, in agent
+    _INSTANCES -= 1
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/wandb/wandb_agent.py", line 650, in agent
+    _INSTANCES -= 1
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1600, in _pydevd_bundle.pydevd_cython.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1457, in _pydevd_bundle.pydevd_cython.SafeCallWrapper.__call__
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1834, in _pydevd_bundle.pydevd_cython.ThreadTracer.__call__
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1152, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1135, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 312, in _pydevd_bundle.pydevd_cython.PyDBFrame.do_wait_suspend
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/pydevd.py", line 2070, in do_wait_suspend
+    keep_suspended = self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread, frames_tracker)
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/pydevd.py", line 2106, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/rich/console.py", line 1621, in print
+    extend(render(renderable, render_options))
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/rich/console.py", line 1263, in render
+    yield from self.render(render_output, _options)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/rich/console.py", line 1259, in render
+    for render_output in iter_render:
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/rich/constrain.py", line 29, in __rich_console__
+    yield from console.render(self.renderable, child_options)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/rich/console.py", line 1259, in render
+    for render_output in iter_render:
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/rich/panel.py", line 176, in __rich_console__
+    lines = console.render_lines(renderable, child_options, style=style)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/rich/console.py", line 1294, in render_lines
+    lines = list(
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/rich/segment.py", line 281, in split_and_crop_lines
+    for segment in segments:
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/rich/console.py", line 1259, in render
+    for render_output in iter_render:
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/rich/padding.py", line 97, in __rich_console__
+    lines = console.render_lines(
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/rich/console.py", line 1294, in render_lines
+    lines = list(
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/rich/segment.py", line 281, in split_and_crop_lines
+    for segment in segments:
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/rich/console.py", line 1263, in render
+    yield from self.render(render_output, _options)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/rich/console.py", line 1259, in render
+    for render_output in iter_render:
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/rich/syntax.py", line 554, in __rich_console__
+    text = self.highlight(code, self.line_range)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/rich/syntax.py", line 470, in highlight
+    text.append_tokens(tokens_to_spans())
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/rich/text.py", line 966, in append_tokens
+    for content, style in tokens:
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/rich/syntax.py", line 458, in tokens_to_spans
+    _token_type, token = next(tokens)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/rich/syntax.py", line 445, in line_tokenize
+    for token_type, token in lexer.get_tokens(code):
+  File "/home/andrea/.local/lib/python3.10/site-packages/pygments/lexer.py", line 190, in streamer
+    for _, t, v in self.get_tokens_unprocessed(text):
+  File "/home/andrea/.local/lib/python3.10/site-packages/pygments/lexer.py", line 632, in get_tokens_unprocessed
+    m = rexmatch(text, pos)
+KeyboardInterrupt
+Original exception was:
+Traceback (most recent call last):
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/__main__.py", line 39, in <module>
+    cli.main()
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/server/cli.py", line 430, in main
+    run()
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/server/cli.py", line 284, in run_file
+    runpy.run_path(target, run_name="__main__")
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "/home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/train_model.py", line 4, in <module>
+    train_sweep()
+  File "/home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/hw2/stud/train.py", line 98, in train_sweep
+    wandb.agent(sweep_id, sweep_model)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/wandb/wandb_agent.py", line 650, in agent
+    _INSTANCES -= 1
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/wandb/wandb_agent.py", line 650, in agent
+    _INSTANCES -= 1
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1600, in _pydevd_bundle.pydevd_cython.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1457, in _pydevd_bundle.pydevd_cython.SafeCallWrapper.__call__
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1834, in _pydevd_bundle.pydevd_cython.ThreadTracer.__call__
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1152, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1135, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 312, in _pydevd_bundle.pydevd_cython.PyDBFrame.do_wait_suspend
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/pydevd.py", line 2070, in do_wait_suspend
+    keep_suspended = self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread, frames_tracker)
+  File "/home/andrea/.vscode/extensions/ms-python.python-2023.10.1/pythonFiles/lib/python/debugpy/_vendored/pydevd/pydevd.py", line 2106, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loggers/wandb.py:396: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(

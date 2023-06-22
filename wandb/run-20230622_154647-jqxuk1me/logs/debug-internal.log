@@ -1,0 +1,13 @@
+2023-06-22 15:46:47,341 INFO    StreamThr :875697 [internal.py:wandb_internal():86] W&B internal server running at pid: 875697, started at: 2023-06-22 15:46:47.341398
+2023-06-22 15:46:47,344 DEBUG   HandlerThread:875697 [handler.py:handle_request():144] handle_request: status
+2023-06-22 15:46:47,345 INFO    WriterThread:875697 [datastore.py:open_for_write():85] open: ./wandb/run-20230622_154647-jqxuk1me/run-jqxuk1me.wandb
+2023-06-22 15:46:47,346 DEBUG   SenderThread:875697 [sender.py:send():375] send: header
+2023-06-22 15:46:47,347 DEBUG   SenderThread:875697 [sender.py:send():375] send: run
+2023-06-22 15:46:47,351 INFO    SenderThread:875697 [sender.py:_maybe_setup_resume():761] checking resume status for andr3us/nlp2023-hw2/jqxuk1me
+2023-06-22 15:46:47,548 DEBUG   HandlerThread:875697 [handler.py:handle_request():144] handle_request: shutdown
+2023-06-22 15:46:47,548 INFO    HandlerThread:875697 [handler.py:finish():845] shutting down handler
+2023-06-22 15:46:47,566 INFO    SenderThread:875697 [sender.py:_maybe_setup_resume():833] configured resuming with: ResumeState(resumed=True,step=1,history=0,events=0,output=0,runtime=0,wandb_runtime=None,summary={},config={'lr': {'value': 3e-05}, 'loss': {'value': 'cross_entropy'}, 'epochs': {'value': 10}, 'max_len': {'value': 128}, 'batch_size': {'value': 16}, 'weight_decay': {'value': 1e-05}, 'gloss_model_name': {'value': 'bert-base-cased'}, 'gradient_clipping': {'value': 0.5}, 'sentence_model_name': {'value': 'bert-base-cased'}})
+2023-06-22 15:46:47,929 INFO    SenderThread:875697 [dir_watcher.py:__init__():219] watching files in: ./wandb/run-20230622_154647-jqxuk1me/files
+2023-06-22 15:46:47,930 INFO    SenderThread:875697 [sender.py:_start_run_threads():1124] run started: jqxuk1me with start time 1687441607.340964
+2023-06-22 15:46:47,930 INFO    SenderThread:875697 [sender.py:finish():1550] shutting down sender
+2023-06-22 15:46:47,930 INFO    SenderThread:875697 [dir_watcher.py:finish():365] shutting down directory watcher

@@ -1,0 +1,54 @@
+2023-06-19 14:43:14,096 INFO    StreamThr :57493 [internal.py:wandb_internal():86] W&B internal server running at pid: 57493, started at: 2023-06-19 14:43:14.095853
+2023-06-19 14:43:14,099 DEBUG   HandlerThread:57493 [handler.py:handle_request():144] handle_request: status
+2023-06-19 14:43:14,100 INFO    WriterThread:57493 [datastore.py:open_for_write():85] open: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230619_144314-mzli0lev/run-mzli0lev.wandb
+2023-06-19 14:43:14,103 DEBUG   SenderThread:57493 [sender.py:send():369] send: header
+2023-06-19 14:43:14,128 DEBUG   SenderThread:57493 [sender.py:send():369] send: run
+2023-06-19 14:43:14,565 DEBUG   HandlerThread:57493 [handler.py:handle_request():144] handle_request: check_version
+2023-06-19 14:43:14,567 INFO    SenderThread:57493 [dir_watcher.py:__init__():211] watching files in: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230619_144314-mzli0lev/files
+2023-06-19 14:43:14,568 INFO    SenderThread:57493 [sender.py:_start_run_threads():1100] run started: mzli0lev with start time 1687178594.095502
+2023-06-19 14:43:14,568 DEBUG   SenderThread:57493 [sender.py:send_request():396] send_request: summary_record
+2023-06-19 14:43:14,568 INFO    SenderThread:57493 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-06-19 14:43:14,568 DEBUG   SenderThread:57493 [sender.py:send_request():396] send_request: check_version
+2023-06-19 14:43:14,669 DEBUG   HandlerThread:57493 [handler.py:handle_request():144] handle_request: run_start
+2023-06-19 14:43:14,674 DEBUG   HandlerThread:57493 [system_info.py:__init__():31] System info init
+2023-06-19 14:43:14,674 DEBUG   HandlerThread:57493 [system_info.py:__init__():46] System info init done
+2023-06-19 14:43:14,674 INFO    HandlerThread:57493 [system_monitor.py:start():181] Starting system monitor
+2023-06-19 14:43:14,674 INFO    HandlerThread:57493 [system_monitor.py:probe():201] Collecting system info
+2023-06-19 14:43:14,674 INFO    SystemMonitor:57493 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-19 14:43:14,676 INFO    SystemMonitor:57493 [interfaces.py:start():190] Started cpu monitoring
+2023-06-19 14:43:14,677 INFO    SystemMonitor:57493 [interfaces.py:start():190] Started disk monitoring
+2023-06-19 14:43:14,678 INFO    SystemMonitor:57493 [interfaces.py:start():190] Started gpu monitoring
+2023-06-19 14:43:14,679 INFO    SystemMonitor:57493 [interfaces.py:start():190] Started memory monitoring
+2023-06-19 14:43:14,679 INFO    SystemMonitor:57493 [interfaces.py:start():190] Started network monitoring
+2023-06-19 14:43:14,703 DEBUG   HandlerThread:57493 [system_info.py:probe():195] Probing system
+2023-06-19 14:43:14,707 DEBUG   HandlerThread:57493 [system_info.py:_probe_git():180] Probing git
+2023-06-19 14:43:14,715 DEBUG   HandlerThread:57493 [system_info.py:_probe_git():188] Probing git done
+2023-06-19 14:43:14,715 DEBUG   HandlerThread:57493 [system_info.py:probe():240] Probing system done
+2023-06-19 14:43:14,715 DEBUG   HandlerThread:57493 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-75-generic-x86_64-with-glibc2.35', 'python': '3.9.16', 'heartbeatAt': '2023-06-19T12:43:14.703237', 'startedAt': '2023-06-19T12:43:14.086949', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/train_model.py', 'git': {'remote': 'https://github.com/SapienzaNLP/nlp2023-hw2.git', 'commit': 'e09072800dbc48addb060d7e09ea96728343636f'}, 'email': 'sanchietti.1883210@studenti.uniroma1.it', 'root': '/home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2', 'host': 'andrea-Pc', 'username': 'andrea', 'executable': '/home/andrea/miniconda3/envs/nlp2023-hw2/bin/python', 'cpu_count': 12, 'cpu_count_logical': 20, 'cpu_freq': {'current': 2220.0207, 'min': 800.0, 'max': 4580.0}, 'cpu_freq_per_core': [{'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4900.0}, {'current': 2100.0, 'min': 800.0, 'max': 4900.0}, {'current': 2100.0, 'min': 800.0, 'max': 4900.0}, {'current': 2100.0, 'min': 800.0, 'max': 4900.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 4500.414, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 3600.0}, {'current': 2100.0, 'min': 800.0, 'max': 3600.0}, {'current': 2100.0, 'min': 800.0, 'max': 3600.0}, {'current': 2100.0, 'min': 800.0, 'max': 3600.0}], 'disk': {'total': 250.59968948364258, 'used': 180.9334487915039}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 31.15399169921875}}
+2023-06-19 14:43:14,715 INFO    HandlerThread:57493 [system_monitor.py:probe():211] Finished collecting system info
+2023-06-19 14:43:14,715 INFO    HandlerThread:57493 [system_monitor.py:probe():214] Publishing system info
+2023-06-19 14:43:14,715 DEBUG   HandlerThread:57493 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-06-19 14:43:14,716 DEBUG   HandlerThread:57493 [system_info.py:_save_pip():67] Saving pip packages done
+2023-06-19 14:43:14,716 DEBUG   HandlerThread:57493 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-06-19 14:43:15,572 INFO    Thread-17 :57493 [dir_watcher.py:_on_file_created():272] file/dir created: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230619_144314-mzli0lev/files/conda-environment.yaml
+2023-06-19 14:43:15,573 INFO    Thread-17 :57493 [dir_watcher.py:_on_file_created():272] file/dir created: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230619_144314-mzli0lev/files/wandb-summary.json
+2023-06-19 14:43:15,573 INFO    Thread-17 :57493 [dir_watcher.py:_on_file_created():272] file/dir created: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230619_144314-mzli0lev/files/requirements.txt
+2023-06-19 14:43:15,620 DEBUG   HandlerThread:57493 [system_info.py:_save_conda():86] Saving conda packages done
+2023-06-19 14:43:15,621 INFO    HandlerThread:57493 [system_monitor.py:probe():216] Finished publishing system info
+2023-06-19 14:43:15,624 DEBUG   SenderThread:57493 [sender.py:send():369] send: files
+2023-06-19 14:43:15,624 INFO    SenderThread:57493 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2023-06-19 14:43:15,631 DEBUG   HandlerThread:57493 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-19 14:43:15,632 DEBUG   SenderThread:57493 [sender.py:send_request():396] send_request: stop_status
+2023-06-19 14:43:15,852 DEBUG   SenderThread:57493 [sender.py:send():369] send: telemetry
+2023-06-19 14:43:16,173 INFO    wandb-upload_0:57493 [upload_job.py:push():133] Uploaded file /tmp/tmpxu4mb8_7wandb/jvllwudx-wandb-metadata.json
+2023-06-19 14:43:16,569 INFO    Thread-17 :57493 [dir_watcher.py:_on_file_created():272] file/dir created: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230619_144314-mzli0lev/files/output.log
+2023-06-19 14:43:16,569 INFO    Thread-17 :57493 [dir_watcher.py:_on_file_created():272] file/dir created: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230619_144314-mzli0lev/files/wandb-metadata.json
+2023-06-19 14:43:18,570 INFO    Thread-17 :57493 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230619_144314-mzli0lev/files/output.log
+2023-06-19 14:43:19,854 DEBUG   HandlerThread:57493 [handler.py:handle_request():144] handle_request: status_report
+2023-06-19 14:43:24,572 INFO    Thread-17 :57493 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230619_144314-mzli0lev/files/output.log
+2023-06-19 14:43:25,543 DEBUG   HandlerThread:57493 [handler.py:handle_request():144] handle_request: status_report
+2023-06-19 14:43:30,544 DEBUG   HandlerThread:57493 [handler.py:handle_request():144] handle_request: status_report
+2023-06-19 14:43:30,631 DEBUG   HandlerThread:57493 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-19 14:43:30,632 DEBUG   SenderThread:57493 [sender.py:send_request():396] send_request: stop_status
+2023-06-19 14:43:35,811 DEBUG   HandlerThread:57493 [handler.py:handle_request():144] handle_request: status_report
+2023-06-19 14:43:40,812 DEBUG   HandlerThread:57493 [handler.py:handle_request():144] handle_request: status_report

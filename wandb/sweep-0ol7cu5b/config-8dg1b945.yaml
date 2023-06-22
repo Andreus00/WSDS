@@ -1,0 +1,20 @@
+wandb_version: 1
+
+batch_size:
+  value: 8
+epochs:
+  value: 10
+gloss_model_name:
+  value: bert-base-cased
+gradient_clipping:
+  value: 1
+loss:
+  value: cross_entropy
+lr:
+  value: 5.0e-07
+max_len:
+  value: 512
+sentence_model_name:
+  value: bert-base-cased
+weight_decay:
+  value: 1.0e-06

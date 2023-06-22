@@ -1,0 +1,95 @@
+2023-06-22 04:35:27,162 INFO    StreamThr :649289 [internal.py:wandb_internal():86] W&B internal server running at pid: 649289, started at: 2023-06-22 04:35:27.161557
+2023-06-22 04:35:27,164 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: status
+2023-06-22 04:35:27,166 INFO    WriterThread:649289 [datastore.py:open_for_write():85] open: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230622_043527-dx67lzxp/run-dx67lzxp.wandb
+2023-06-22 04:35:27,168 DEBUG   SenderThread:649289 [sender.py:send():375] send: header
+2023-06-22 04:35:27,169 DEBUG   SenderThread:649289 [sender.py:send():375] send: run
+2023-06-22 04:35:27,601 INFO    SenderThread:649289 [dir_watcher.py:__init__():219] watching files in: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230622_043527-dx67lzxp/files
+2023-06-22 04:35:27,601 INFO    SenderThread:649289 [sender.py:_start_run_threads():1124] run started: dx67lzxp with start time 1687401327.16038
+2023-06-22 04:35:27,601 DEBUG   SenderThread:649289 [sender.py:send_request():402] send_request: summary_record
+2023-06-22 04:35:27,601 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: check_version
+2023-06-22 04:35:27,602 INFO    SenderThread:649289 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-22 04:35:27,602 DEBUG   SenderThread:649289 [sender.py:send_request():402] send_request: check_version
+2023-06-22 04:35:27,695 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: run_start
+2023-06-22 04:35:27,700 DEBUG   HandlerThread:649289 [system_info.py:__init__():31] System info init
+2023-06-22 04:35:27,700 DEBUG   HandlerThread:649289 [system_info.py:__init__():46] System info init done
+2023-06-22 04:35:27,700 INFO    HandlerThread:649289 [system_monitor.py:start():181] Starting system monitor
+2023-06-22 04:35:27,701 INFO    HandlerThread:649289 [system_monitor.py:probe():201] Collecting system info
+2023-06-22 04:35:27,702 INFO    SystemMonitor:649289 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-22 04:35:27,703 INFO    SystemMonitor:649289 [interfaces.py:start():190] Started cpu monitoring
+2023-06-22 04:35:27,704 INFO    SystemMonitor:649289 [interfaces.py:start():190] Started disk monitoring
+2023-06-22 04:35:27,705 INFO    SystemMonitor:649289 [interfaces.py:start():190] Started gpu monitoring
+2023-06-22 04:35:27,706 INFO    SystemMonitor:649289 [interfaces.py:start():190] Started memory monitoring
+2023-06-22 04:35:27,707 INFO    SystemMonitor:649289 [interfaces.py:start():190] Started network monitoring
+2023-06-22 04:35:27,767 DEBUG   HandlerThread:649289 [system_info.py:probe():195] Probing system
+2023-06-22 04:35:27,769 DEBUG   HandlerThread:649289 [system_info.py:_probe_git():180] Probing git
+2023-06-22 04:35:27,773 DEBUG   HandlerThread:649289 [system_info.py:_probe_git():188] Probing git done
+2023-06-22 04:35:27,773 DEBUG   HandlerThread:649289 [system_info.py:probe():240] Probing system done
+2023-06-22 04:35:27,773 DEBUG   HandlerThread:649289 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-75-generic-x86_64-with-glibc2.35', 'python': '3.10.10', 'heartbeatAt': '2023-06-22T02:35:27.767910', 'startedAt': '2023-06-22T02:35:27.153640', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/train_model.py', 'git': {'remote': 'https://github.com/SapienzaNLP/nlp2023-hw2.git', 'commit': 'e09072800dbc48addb060d7e09ea96728343636f'}, 'email': 'sanchietti.1883210@studenti.uniroma1.it', 'root': '/home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2', 'host': 'andrea-Pc', 'username': 'andrea', 'executable': '/home/andrea/miniconda3/envs/cla-transformer/bin/python', 'cpu_count': 12, 'cpu_count_logical': 20, 'cpu_freq': {'current': 2340.54305, 'min': 800.0, 'max': 4580.0}, 'cpu_freq_per_core': [{'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 4585.853, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4900.0}, {'current': 2100.0, 'min': 800.0, 'max': 4900.0}, {'current': 2100.0, 'min': 800.0, 'max': 4900.0}, {'current': 2100.0, 'min': 800.0, 'max': 4900.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 3600.0}, {'current': 2100.0, 'min': 800.0, 'max': 3600.0}, {'current': 2100.0, 'min': 800.0, 'max': 3600.0}, {'current': 2100.0, 'min': 800.0, 'max': 3600.0}], 'disk': {'total': 250.59968948364258, 'used': 182.5870132446289}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 31.15399169921875}}
+2023-06-22 04:35:27,773 INFO    HandlerThread:649289 [system_monitor.py:probe():211] Finished collecting system info
+2023-06-22 04:35:27,773 INFO    HandlerThread:649289 [system_monitor.py:probe():214] Publishing system info
+2023-06-22 04:35:27,773 DEBUG   HandlerThread:649289 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-06-22 04:35:27,774 DEBUG   HandlerThread:649289 [system_info.py:_save_pip():67] Saving pip packages done
+2023-06-22 04:35:27,774 DEBUG   HandlerThread:649289 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-06-22 04:35:28,604 INFO    Thread-17 :649289 [dir_watcher.py:_on_file_created():278] file/dir created: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230622_043527-dx67lzxp/files/requirements.txt
+2023-06-22 04:35:28,604 INFO    Thread-17 :649289 [dir_watcher.py:_on_file_created():278] file/dir created: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230622_043527-dx67lzxp/files/conda-environment.yaml
+2023-06-22 04:35:28,604 INFO    Thread-17 :649289 [dir_watcher.py:_on_file_created():278] file/dir created: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230622_043527-dx67lzxp/files/wandb-summary.json
+2023-06-22 04:35:28,606 DEBUG   HandlerThread:649289 [system_info.py:_save_conda():86] Saving conda packages done
+2023-06-22 04:35:28,607 INFO    HandlerThread:649289 [system_monitor.py:probe():216] Finished publishing system info
+2023-06-22 04:35:28,609 DEBUG   SenderThread:649289 [sender.py:send():375] send: files
+2023-06-22 04:35:28,609 INFO    SenderThread:649289 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-06-22 04:35:28,614 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 04:35:28,614 DEBUG   SenderThread:649289 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 04:35:28,819 DEBUG   SenderThread:649289 [sender.py:send():375] send: telemetry
+2023-06-22 04:35:29,121 INFO    wandb-upload_0:649289 [upload_job.py:push():137] Uploaded file /tmp/tmphtdnst4fwandb/a8u5b0rv-wandb-metadata.json
+2023-06-22 04:35:29,601 INFO    Thread-17 :649289 [dir_watcher.py:_on_file_created():278] file/dir created: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230622_043527-dx67lzxp/files/output.log
+2023-06-22 04:35:29,601 INFO    Thread-17 :649289 [dir_watcher.py:_on_file_created():278] file/dir created: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230622_043527-dx67lzxp/files/wandb-metadata.json
+2023-06-22 04:35:31,602 INFO    Thread-17 :649289 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230622_043527-dx67lzxp/files/output.log
+2023-06-22 04:35:32,602 INFO    Thread-17 :649289 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230622_043527-dx67lzxp/files/output.log
+2023-06-22 04:35:32,882 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 04:35:33,602 INFO    Thread-17 :649289 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230622_043527-dx67lzxp/files/output.log
+2023-06-22 04:35:34,603 INFO    Thread-17 :649289 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230622_043527-dx67lzxp/files/output.log
+2023-06-22 04:35:37,603 INFO    Thread-17 :649289 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230622_043527-dx67lzxp/files/output.log
+2023-06-22 04:35:38,498 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 04:35:43,498 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 04:35:43,614 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 04:35:43,615 DEBUG   SenderThread:649289 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 04:35:48,761 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 04:35:53,762 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 04:35:58,614 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 04:35:58,615 DEBUG   SenderThread:649289 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 04:35:58,775 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 04:35:59,608 INFO    Thread-17 :649289 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230622_043527-dx67lzxp/files/config.yaml
+2023-06-22 04:36:03,963 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 04:36:08,963 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 04:36:13,614 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 04:36:13,615 DEBUG   SenderThread:649289 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 04:36:14,769 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 04:36:19,770 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 04:36:24,771 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 04:36:27,707 DEBUG   SystemMonitor:649289 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-22 04:36:27,709 DEBUG   SenderThread:649289 [sender.py:send():375] send: stats
+2023-06-22 04:36:28,614 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 04:36:28,615 DEBUG   SenderThread:649289 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 04:36:30,769 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 04:36:35,769 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 04:36:40,770 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 04:36:43,615 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 04:36:43,615 DEBUG   SenderThread:649289 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 04:36:46,759 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 04:36:51,760 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 04:36:56,761 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 04:36:57,710 DEBUG   SenderThread:649289 [sender.py:send():375] send: stats
+2023-06-22 04:36:58,615 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 04:36:58,615 DEBUG   SenderThread:649289 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 04:37:01,762 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 04:37:06,763 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 04:37:11,764 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 04:37:13,615 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 04:37:13,616 DEBUG   SenderThread:649289 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 04:37:17,761 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 04:37:22,762 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 04:37:27,711 DEBUG   SenderThread:649289 [sender.py:send():375] send: stats
+2023-06-22 04:37:28,615 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 04:37:28,615 DEBUG   SenderThread:649289 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 04:37:28,767 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 04:37:33,768 DEBUG   HandlerThread:649289 [handler.py:handle_request():144] handle_request: status_report

@@ -1,0 +1,101 @@
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loggers/wandb.py:396: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+You are using a CUDA device ('NVIDIA GeForce RTX 3090') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:615: UserWarning: Checkpoint directory /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/model exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name            | Type             | Params
+-----------------------------------------------------
+0 | gloss_encoder   | GlossEncoder     | 108 M
+1 | context_encoder | ContextEncoder   | 108 M
+2 | loss            | CrossEntropyLoss | 0
+3 | cc              | CosineSimilarity | 0
+-----------------------------------------------------
+216 M     Trainable params
+0         Non-trainable params
+216 M     Total params
+866.482   Total estimated model params size (MB)
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:432: PossibleUserWarning: The dataloader, val_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 20 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/utilities/data.py:120: UserWarning: Your `IterableDataset` has `__len__` defined. In combination with multi-process data loading (when num_workers > 1), `__len__` could be inaccurate if each worker is not configured independently to avoid having duplicate data.
+  rank_zero_warn(
+Epoch 0:   1%|██▏                                                                                                                                                                                                           | 13/1247 [00:00<00:05, 213.42it/s, v_num=ccuu]
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/utilities/data.py:76: UserWarning: Trying to infer the `batch_size` from an ambiguous collection. The batch size we found is 16. To avoid any miscalculations, use `self.log(..., batch_size=batch_size)`.
+  warning_cache.warn(
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:432: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 20 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loops/optimization/automatic.py:129: UserWarning: `training_step` returned `None`. If this was on purpose, ignore this warning...
+
+
+Epoch 0: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1247/1247 [00:03<00:00, 317.41it/s, v_num=ccuu]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Validation DataLoader 0:  96%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏        | 67/70 [00:32<00:01,  2.09it/s]
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/utilities/data.py:76: UserWarning: Trying to infer the `batch_size` from an ambiguous collection. The batch size we found is 2. To avoid any miscalculations, use `self.log(..., batch_size=batch_size)`.
+
+  warning_cache.warn(
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:212: UserWarning: You called `self.log('train_loss', ...)` in your `on_train_epoch_end` but the value needs to be floating point. Converting it to torch.float32.
+
+Epoch 1:   0%|                                                                                  | 0/1247 [00:00<?, ?it/s, v_num=ccuu, val_loss_batch_step=1.390, val_loss_batch_epoch=nan.0, val_loss=nan.0, val_acc=0.532, val_prec=0.228, val_recall=0.181, val_f1=0.121]
+
+
+Epoch 1: 100%|█| 1247/1247 [00:21<00:00, 57.92it/s, v_num=ccuu, val_loss_batch_step=1.390, val_loss_batch_epoch=nan.0, val_loss=nan.0, val_acc=0.532, val_prec=0.228, val_recall=0.181, val_f1=0.121, train_loss=0.000, train_acc=0.532, train_prec=0.228, train_recall=0.1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 2: 100%|█| 1247/1247 [00:04<00:00, 278.01it/s, v_num=ccuu, val_loss_batch_step=1.390, val_loss_batch_epoch=nan.0, val_loss=nan.0, val_acc=0.532, val_prec=0.228, val_recall=0.182, val_f1=0.121, train_loss=0.000, train_acc=0.532, train_prec=0.228, train_recall=0.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

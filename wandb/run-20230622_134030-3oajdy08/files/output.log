@@ -1,0 +1,42 @@
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loggers/wandb.py:396: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+Traceback (most recent call last):
+  File "/home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/train_model.py", line 4, in <module>
+    train()
+  File "/home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/hw2/stud/train.py", line 108, in train
+    trainer = pl.Trainer(accelerator="cuda",
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/utilities/argparse.py", line 69, in insert_env_defaults
+    return fn(self, **kwargs)
+TypeError: Trainer.__init__() got an unexpected keyword argument 'normalize_gradients'
+[31m╭─────────────────────────────── [39m[1mTraceback (most recent call last)[31m[22m ────────────────────────────────╮
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/[1mtrain_model.py[22m:[94m4[39m  [31m│
+[31m│[39m in [92m<module>[39m                                                                                      [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   1 [94mfrom[39m [4mhw2.stud.train[24m [94mimport[39m train                                                             [31m│
+[31m│[39m   2                                                                                              [31m│
+[31m│[39m   3 [94mif[39m [91m__name__[39m == [33m'__main__'[39m:                                                                   [31m│
+[31m│[39m [31m❱ [39m4 │   train()                                                                                  [31m│
+[31m│[39m /home/andrea/Documenti/Computer Science/Natural Language                                         [31m│
+[31m│[39m Procesing/nlp2023-hw2/hw2/stud/[1mtrain.py[22m:[94m108[39m in [92mtrain[39m                                             [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   105 │                                                                                          [31m│
+[31m│[39m   106 │   # train                                                                                [31m│
+[31m│[39m   107 │                                                                                          [31m│
+[31m│[39m [31m❱ [39m108 │   trainer = pl.Trainer(accelerator=[33m"cuda"[39m,                                               [31m│
+[31m│[39m   109 │   │   │   │   │   │    devices=[94m1[39m,                                                        [31m│
+[31m│[39m   110 │   │   │   │   │   │    max_epochs=config.epochs,                                         [31m│
+[31m│[39m   111 │   │   │   │   │   │    logger=wandb_logger,                                              [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/util [31m│
+[31m│[39m ities/[1margparse.py[22m:[94m69[39m in [92minsert_env_defaults[39m                                                      [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   66 │   │   kwargs = [96mdict[39m([96mlist[39m(env_variables.items()) + [96mlist[39m(kwargs.items()))                   [31m│
+[31m│[39m   67 │   │                                                                                       [31m│
+[31m│[39m   68 │   │   # all args were already moved to kwargs                                             [31m│
+[31m│[39m [31m❱ [39m69 │   │   [94mreturn[39m fn([96mself[39m, **kwargs)                                                           [31m│
+[31m│[39m   70 │                                                                                           [31m│
+[31m│[39m   71 │   [94mreturn[39m cast(_T, insert_env_defaults)                                                    [31m│
+[31m│[39m   72                                                                                             [31m│
+[31m╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+[1mTypeError: Trainer.__init__()[22m got an unexpected keyword argument [32m'normalize_gradients'

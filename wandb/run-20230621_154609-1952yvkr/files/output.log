@@ -1,0 +1,596 @@
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loggers/wandb.py:396: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+You are using a CUDA device ('NVIDIA GeForce RTX 3090') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name            | Type             | Params
+-----------------------------------------------------
+0 | gloss_encoder   | GlossEncoder     | 108 M
+1 | context_encoder | ContextEncoder   | 108 M
+2 | loss            | CrossEntropyLoss | 0
+-----------------------------------------------------
+216 M     Trainable params
+0         Non-trainable params
+216 M     Total params
+866.482   Total estimated model params size (MB)
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:432: PossibleUserWarning: The dataloader, val_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 20 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/utilities/data.py:120: UserWarning: Your `IterableDataset` has `__len__` defined. In combination with multi-process data loading (when num_workers > 1), `__len__` could be inaccurate if each worker is not configured independently to avoid having duplicate data.
+  rank_zero_warn(
+Sanity Checking DataLoader 0:  50%|█████████████▌             | 1/2 [00:00<00:00,  1.08it/s]
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:432: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 20 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+Traceback (most recent call last):
+  File "/home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/train_model.py", line 4, in <module>
+    train()
+  File "/home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/hw2/stud/train.py", line 104, in train
+    trainer.fit(model, train_dataloader, val_dataloader)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 531, in fit
+    call._call_and_handle_interrupt(
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 42, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 570, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 975, in _run
+    results = self._run_stage()
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1018, in _run_stage
+    self.fit_loop.run()
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loops/fit_loop.py", line 201, in run
+    self.advance()
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loops/fit_loop.py", line 354, in advance
+    self.epoch_loop.run(self._data_fetcher)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loops/training_epoch_loop.py", line 133, in run
+    self.advance(data_fetcher)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loops/training_epoch_loop.py", line 218, in advance
+    batch_output = self.automatic_optimization.run(trainer.optimizers[0], kwargs)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loops/optimization/automatic.py", line 185, in run
+    self._optimizer_step(kwargs.get("batch_idx", 0), closure)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loops/optimization/automatic.py", line 260, in _optimizer_step
+    call._call_lightning_module_hook(
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 140, in _call_lightning_module_hook
+    output = fn(*args, **kwargs)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/core/module.py", line 1256, in optimizer_step
+    optimizer.step(closure=optimizer_closure)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/core/optimizer.py", line 155, in step
+    step_output = self._strategy.optimizer_step(self._optimizer, closure, **kwargs)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/strategies/strategy.py", line 225, in optimizer_step
+    return self.precision_plugin.optimizer_step(optimizer, model=model, closure=closure, **kwargs)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/plugins/precision/precision_plugin.py", line 114, in optimizer_step
+    return optimizer.step(closure=closure, **kwargs)
+  File "/home/andrea/.local/lib/python3.10/site-packages/torch/optim/optimizer.py", line 280, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/andrea/.local/lib/python3.10/site-packages/torch/optim/optimizer.py", line 33, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/andrea/.local/lib/python3.10/site-packages/torch/optim/adamw.py", line 148, in step
+    loss = closure()
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/plugins/precision/precision_plugin.py", line 101, in _wrap_closure
+    closure_result = closure()
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loops/optimization/automatic.py", line 140, in __call__
+    self._result = self.closure(*args, **kwargs)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loops/optimization/automatic.py", line 126, in closure
+    step_output = self._step_fn()
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loops/optimization/automatic.py", line 307, in _training_step
+    training_step_output = call._call_strategy_hook(trainer, "training_step", *kwargs.values())
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 287, in _call_strategy_hook
+    output = fn(*args, **kwargs)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/strategies/strategy.py", line 367, in training_step
+    return self.model.training_step(*args, **kwargs)
+  File "/home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/hw2/stud/biencoder.py", line 76, in training_step
+    cross_dot = self.forward(gloss_input_ids, gloss_attention_mask, context_input_ids, context_attention_mask, context_output_mask)
+  File "/home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/hw2/stud/biencoder.py", line 55, in forward
+    gloss_hidden_states = self.gloss_encoder(gloss_input_ids[i], gloss_attention_mask[i])
+  File "/home/andrea/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/hw2/stud/biencoder.py", line 22, in forward
+    return self.model(input_ids, attention_mask=attention_mask).last_hidden_state[:, 0, :]
+  File "/home/andrea/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/andrea/.local/lib/python3.10/site-packages/transformers/models/bert/modeling_bert.py", line 1021, in forward
+    encoder_outputs = self.encoder(
+  File "/home/andrea/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/andrea/.local/lib/python3.10/site-packages/transformers/models/bert/modeling_bert.py", line 610, in forward
+    layer_outputs = layer_module(
+  File "/home/andrea/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/andrea/.local/lib/python3.10/site-packages/transformers/models/bert/modeling_bert.py", line 496, in forward
+    self_attention_outputs = self.attention(
+  File "/home/andrea/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/andrea/.local/lib/python3.10/site-packages/transformers/models/bert/modeling_bert.py", line 426, in forward
+    self_outputs = self.self(
+  File "/home/andrea/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/andrea/.local/lib/python3.10/site-packages/transformers/models/bert/modeling_bert.py", line 358, in forward
+    attention_probs = self.dropout(attention_probs)
+  File "/home/andrea/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/andrea/.local/lib/python3.10/site-packages/torch/nn/modules/dropout.py", line 59, in forward
+    return F.dropout(input, self.p, self.training, self.inplace)
+  File "/home/andrea/.local/lib/python3.10/site-packages/torch/nn/functional.py", line 1252, in dropout
+    return _VF.dropout_(input, p, training) if inplace else _VF.dropout(input, p, training)
+Sanity Checking DataLoader 0: 100%|███████████████████████████| 2/2 [00:01<00:00,  1.11it/s]-7493.865234375
+Epoch 0:   0%|                                                     | 0/2494 [00:00<?, ?it/s]
+[31m╭─────────────────────────── [39m[1mTraceback (most recent call last)[31m[22m ────────────────────────────╮
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/Documents/Computer Science/Natural Language                                 [31m│
+[31m│[39m Procesing/nlp2023-hw2/[1mtrain_model.py[22m:[94m4[39m in [92m<module>[39m                                       [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   1 [94mfrom[39m [4mhw2.stud.train[24m [94mimport[39m train                                                     [31m│
+[31m│[39m   2                                                                                      [31m│
+[31m│[39m   3 [94mif[39m [91m__name__[39m == [33m'__main__'[39m:                                                           [31m│
+[31m│[39m [31m❱ [39m4 │   train()                                                                          [31m│
+[31m│[39m /home/andrea/Documenti/Computer Science/Natural Language                                 [31m│
+[31m│[39m Procesing/nlp2023-hw2/hw2/stud/[1mtrain.py[22m:[94m104[39m in [92mtrain[39m                                     [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   101 │   │   │   │   │   │    gradient_clip_val=config.gradient_clipping,               [31m│
+[31m│[39m   102 │   │   │   │   │   │    callbacks=[pl.callbacks.EarlyStopping(monitor=[33m'val_loss'[39m, [31m│
+[31m│[39m   103 │                                                                                  [31m│
+[31m│[39m [31m❱ [39m104 │   trainer.fit(model, train_dataloader, val_dataloader)                           [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightn [31m│
+[31m│[39m ing/trainer/[1mtrainer.py[22m:[94m531[39m in [92mfit[39m                                                        [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m    528 │   │   [33m"""[39m                                                                       [31m│
+[31m│[39m    529 │   │   model = _maybe_unwrap_optimized(model)                                    [31m│
+[31m│[39m    530 │   │   [96mself[39m.strategy._lightning_module = model                                   [31m│
+[31m│[39m [31m❱ [39m 531 │   │   call._call_and_handle_interrupt(                                          [31m│
+[31m│[39m    532 │   │   │   [96mself[39m, [96mself[39m._fit_impl, model, train_dataloaders, val_dataloaders, data [31m│
+[31m│[39m    533 │   │   )                                                                         [31m│
+[31m│[39m    534                                                                                   [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightn [31m│
+[31m│[39m ing/trainer/[1mcall.py[22m:[94m42[39m in [92m_call_and_handle_interrupt[39m                                     [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m    39 │   [94mtry[39m:                                                                           [31m│
+[31m│[39m    40 │   │   [94mif[39m trainer.strategy.launcher [95mis[39m [95mnot[39m [94mNone[39m:                                  [31m│
+[31m│[39m    41 │   │   │   [94mreturn[39m trainer.strategy.launcher.launch(trainer_fn, *args, trainer=tra [31m│
+[31m│[39m [31m❱ [39m 42 │   │   [94mreturn[39m trainer_fn(*args, **kwargs)                                         [31m│
+[31m│[39m    43 │                                                                                  [31m│
+[31m│[39m    44 │   [94mexcept[39m _TunerExitException:                                                    [31m│
+[31m│[39m    45 │   │   _call_teardown_hook(trainer)                                               [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightn [31m│
+[31m│[39m ing/trainer/[1mtrainer.py[22m:[94m570[39m in [92m_fit_impl[39m                                                  [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m    567 │   │   │   model_provided=[94mTrue[39m,                                                  [31m│
+[31m│[39m    568 │   │   │   model_connected=[96mself[39m.lightning_module [95mis[39m [95mnot[39m [94mNone[39m,                    [31m│
+[31m│[39m    569 │   │   )                                                                         [31m│
+[31m│[39m [31m❱ [39m 570 │   │   [96mself[39m._run(model, ckpt_path=ckpt_path)                                     [31m│
+[31m│[39m    571 │   │                                                                             [31m│
+[31m│[39m    572 │   │   [94massert[39m [96mself[39m.state.stopped                                                 [31m│
+[31m│[39m    573 │   │   [96mself[39m.training = [94mFalse[39m                                                     [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightn [31m│
+[31m│[39m ing/trainer/[1mtrainer.py[22m:[94m975[39m in [92m_run[39m                                                       [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m    972 │   │   # ----------------------------                                            [31m│
+[31m│[39m    973 │   │   # RUN THE TRAINER                                                         [31m│
+[31m│[39m    974 │   │   # ----------------------------                                            [31m│
+[31m│[39m [31m❱ [39m 975 │   │   results = [96mself[39m._run_stage()                                               [31m│
+[31m│[39m    976 │   │                                                                             [31m│
+[31m│[39m    977 │   │   # ----------------------------                                            [31m│
+[31m│[39m    978 │   │   # POST-Training CLEAN UP                                                  [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightn [31m│
+[31m│[39m ing/trainer/[1mtrainer.py[22m:[94m1018[39m in [92m_run_stage[39m                                                [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   1015 │   │   │   [94mwith[39m isolate_rng():                                                   [31m│
+[31m│[39m   1016 │   │   │   │   [96mself[39m._run_sanity_check()                                          [31m│
+[31m│[39m   1017 │   │   │   [94mwith[39m torch.autograd.set_detect_anomaly([96mself[39m._detect_anomaly):         [31m│
+[31m│[39m [31m❱ [39m1018 │   │   │   │   [96mself[39m.fit_loop.run()                                               [31m│
+[31m│[39m   1019 │   │   │   [94mreturn[39m [94mNone[39m                                                           [31m│
+[31m│[39m   1020 │   │   [94mraise[39m [96mRuntimeError[39m([33mf"Unexpected state {[96mself[39m.state[33m}"[39m)                      [31m│
+[31m│[39m   1021                                                                                   [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightn [31m│
+[31m│[39m ing/loops/[1mfit_loop.py[22m:[94m201[39m in [92mrun[39m                                                         [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   198 │   │   [94mwhile[39m [95mnot[39m [96mself[39m.done:                                                       [31m│
+[31m│[39m   199 │   │   │   [94mtry[39m:                                                                   [31m│
+[31m│[39m   200 │   │   │   │   [96mself[39m.on_advance_start()                                            [31m│
+[31m│[39m [31m❱ [39m201 │   │   │   │   [96mself[39m.advance()                                                     [31m│
+[31m│[39m   202 │   │   │   │   [96mself[39m.on_advance_end()                                              [31m│
+[31m│[39m   203 │   │   │   │   [96mself[39m._restarting = [94mFalse[39m                                           [31m│
+[31m│[39m   204 │   │   │   [94mexcept[39m [96mStopIteration[39m:                                                  [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightn [31m│
+[31m│[39m ing/loops/[1mfit_loop.py[22m:[94m354[39m in [92madvance[39m                                                     [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   351 │   │   [94massert[39m [96mself[39m._data_fetcher [95mis[39m [95mnot[39m [94mNone[39m                                      [31m│
+[31m│[39m   352 │   │   [96mself[39m._data_fetcher.setup(combined_loader)                                  [31m│
+[31m│[39m   353 │   │   [94mwith[39m [96mself[39m.trainer.profiler.profile([33m"run_training_epoch"[39m):                  [31m│
+[31m│[39m [31m❱ [39m354 │   │   │   [96mself[39m.epoch_loop.run([96mself[39m._data_fetcher)                                [31m│
+[31m│[39m   355 │                                                                                  [31m│
+[31m│[39m   356 │   [94mdef[39m [92mon_advance_end[39m([96mself[39m) -> [94mNone[39m:                                              [31m│
+[31m│[39m   357 │   │   trainer = [96mself[39m.trainer                                                     [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightn [31m│
+[31m│[39m ing/loops/[1mtraining_epoch_loop.py[22m:[94m133[39m in [92mrun[39m                                              [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   130 │   │   [96mself[39m.on_run_start(data_fetcher)                                            [31m│
+[31m│[39m   131 │   │   [94mwhile[39m [95mnot[39m [96mself[39m.done:                                                       [31m│
+[31m│[39m   132 │   │   │   [94mtry[39m:                                                                   [31m│
+[31m│[39m [31m❱ [39m133 │   │   │   │   [96mself[39m.advance(data_fetcher)                                         [31m│
+[31m│[39m   134 │   │   │   │   [96mself[39m.on_advance_end()                                              [31m│
+[31m│[39m   135 │   │   │   │   [96mself[39m._restarting = [94mFalse[39m                                           [31m│
+[31m│[39m   136 │   │   │   [94mexcept[39m [96mStopIteration[39m:                                                  [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightn [31m│
+[31m│[39m ing/loops/[1mtraining_epoch_loop.py[22m:[94m218[39m in [92madvance[39m                                          [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   215 │   │   │   [94mwith[39m trainer.profiler.profile([33m"run_training_batch"[39m):                   [31m│
+[31m│[39m   216 │   │   │   │   [94mif[39m trainer.lightning_module.automatic_optimization:                [31m│
+[31m│[39m   217 │   │   │   │   │   # in automatic optimization, there can only be one optimizer   [31m│
+[31m│[39m [31m❱ [39m218 │   │   │   │   │   batch_output = [96mself[39m.automatic_optimization.run(trainer.optimiz [31m│
+[31m│[39m   219 │   │   │   │   [94melse[39m:                                                              [31m│
+[31m│[39m   220 │   │   │   │   │   batch_output = [96mself[39m.manual_optimization.run(kwargs)            [31m│
+[31m│[39m   221                                                                                    [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightn [31m│
+[31m│[39m ing/loops/optimization/[1mautomatic.py[22m:[94m185[39m in [92mrun[39m                                           [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   182 │   │   # ------------------------------                                           [31m│
+[31m│[39m   183 │   │   # gradient update with accumulated gradients                               [31m│
+[31m│[39m   184 │   │   [94melse[39m:                                                                      [31m│
+[31m│[39m [31m❱ [39m185 │   │   │   [96mself[39m._optimizer_step(kwargs.get([33m"batch_idx"[39m, [94m0[39m), closure)              [31m│
+[31m│[39m   186 │   │                                                                              [31m│
+[31m│[39m   187 │   │   result = closure.consume_result()                                          [31m│
+[31m│[39m   188 │   │   [94mif[39m result.loss [95mis[39m [94mNone[39m:                                                    [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightn [31m│
+[31m│[39m ing/loops/optimization/[1mautomatic.py[22m:[94m260[39m in [92m_optimizer_step[39m                               [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   257 │   │   │   [96mself[39m.optim_progress.optimizer.step.increment_ready()                   [31m│
+[31m│[39m   258 │   │                                                                              [31m│
+[31m│[39m   259 │   │   # model hook                                                               [31m│
+[31m│[39m [31m❱ [39m260 │   │   call._call_lightning_module_hook(                                          [31m│
+[31m│[39m   261 │   │   │   trainer,                                                               [31m│
+[31m│[39m   262 │   │   │   [33m"optimizer_step"[39m,                                                      [31m│
+[31m│[39m   263 │   │   │   trainer.current_epoch,                                                 [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightn [31m│
+[31m│[39m ing/trainer/[1mcall.py[22m:[94m140[39m in [92m_call_lightning_module_hook[39m                                   [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   137 │   pl_module._current_fx_name = hook_name                                         [31m│
+[31m│[39m   138 │                                                                                  [31m│
+[31m│[39m   139 │   [94mwith[39m trainer.profiler.profile([33mf"[LightningModule]{[39mpl_module.[91m__class__[39m.[91m__name__[39m [31m│
+[31m│[39m [31m❱ [39m140 │   │   output = fn(*args, **kwargs)                                               [31m│
+[31m│[39m   141 │                                                                                  [31m│
+[31m│[39m   142 │   # restore current_fx when nested context                                       [31m│
+[31m│[39m   143 │   pl_module._current_fx_name = prev_fx_name                                      [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightn [31m│
+[31m│[39m ing/core/[1mmodule.py[22m:[94m1256[39m in [92moptimizer_step[39m                                                [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   1253 │   │   │   │   │   [33mfor pg in optimizer.param_groups:[39m                             [31m│
+[31m│[39m   1254 │   │   │   │   │   │   [33mpg["lr"] = lr_scale * self.learning_rate[39m                  [31m│
+[31m│[39m   1255 │   │   [33m"""[39m                                                                       [31m│
+[31m│[39m [31m❱ [39m1256 │   │   optimizer.step(closure=optimizer_closure)                                 [31m│
+[31m│[39m   1257 │                                                                                 [31m│
+[31m│[39m   1258 │   [94mdef[39m [92moptimizer_zero_grad[39m([96mself[39m, epoch: [96mint[39m, batch_idx: [96mint[39m, optimizer: Optimize [31m│
+[31m│[39m   1259 │   │   [33m"""Override this method to change the default behaviour of ``optimizer.ze[39m [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightn [31m│
+[31m│[39m ing/core/[1moptimizer.py[22m:[94m155[39m in [92mstep[39m                                                        [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   152 │   │   │   [94mraise[39m MisconfigurationException([33m"When `optimizer.step(closure)` is cal[39m [31m│
+[31m│[39m   153 │   │                                                                              [31m│
+[31m│[39m   154 │   │   [94massert[39m [96mself[39m._strategy [95mis[39m [95mnot[39m [94mNone[39m                                          [31m│
+[31m│[39m [31m❱ [39m155 │   │   step_output = [96mself[39m._strategy.optimizer_step([96mself[39m._optimizer, closure, **kw [31m│
+[31m│[39m   156 │   │                                                                              [31m│
+[31m│[39m   157 │   │   [96mself[39m._on_after_step()                                                      [31m│
+[31m│[39m   158                                                                                    [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightn [31m│
+[31m│[39m ing/strategies/[1mstrategy.py[22m:[94m225[39m in [92moptimizer_step[39m                                         [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   222 │   │   model = model [95mor[39m [96mself[39m.lightning_module                                     [31m│
+[31m│[39m   223 │   │   # TODO(fabric): remove assertion once strategy's optimizer_step typing is  [31m│
+[31m│[39m   224 │   │   [94massert[39m [96misinstance[39m(model, pl.LightningModule)                               [31m│
+[31m│[39m [31m❱ [39m225 │   │   [94mreturn[39m [96mself[39m.precision_plugin.optimizer_step(optimizer, model=model, closur [31m│
+[31m│[39m   226 │                                                                                  [31m│
+[31m│[39m   227 │   [94mdef[39m [92m_setup_model_and_optimizers[39m([96mself[39m, model: Module, optimizers: List[Optimize [31m│
+[31m│[39m   228 │   │   [33m"""Setup a model and multiple optimizers together.[39m                         [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightn [31m│
+[31m│[39m ing/plugins/precision/[1mprecision_plugin.py[22m:[94m114[39m in [92moptimizer_step[39m                          [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   111 │   ) -> Any:                                                                      [31m│
+[31m│[39m   112 │   │   [33m"""Hook to run the optimizer step."""[39m                                      [31m│
+[31m│[39m   113 │   │   closure = partial([96mself[39m._wrap_closure, model, optimizer, closure)           [31m│
+[31m│[39m [31m❱ [39m114 │   │   [94mreturn[39m optimizer.step(closure=closure, **kwargs)                           [31m│
+[31m│[39m   115 │                                                                                  [31m│
+[31m│[39m   116 │   [94mdef[39m [92m_clip_gradients[39m(                                                           [31m│
+[31m│[39m   117 │   │   [96mself[39m,                                                                      [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/.local/lib/python3.10/site-packages/torch/optim/[1moptimizer.py[22m:[94m280[39m in [92mwrapper[39m [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   277 │   │   │   │   │   │   │   [94mraise[39m [96mRuntimeError[39m([33mf"{[39mfunc[33m} must return None or a tupl[39m [31m│
+[31m│[39m   278 │   │   │   │   │   │   │   │   │   │   │      [33mf"but got {[39mresult[33m}."[39m)               [31m│
+[31m│[39m   279 │   │   │   │                                                                      [31m│
+[31m│[39m [31m❱ [39m280 │   │   │   │   out = func(*args, **kwargs)                                        [31m│
+[31m│[39m   281 │   │   │   │   [96mself[39m._optimizer_step_code()                                        [31m│
+[31m│[39m   282 │   │   │   │                                                                      [31m│
+[31m│[39m   283 │   │   │   │   # call optimizer step post hooks                                   [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/.local/lib/python3.10/site-packages/torch/optim/[1moptimizer.py[22m:[94m33[39m in          [31m│
+[31m│[39m [92m_use_grad[39m                                                                                [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m    30 │   │   prev_grad = torch.is_grad_enabled()                                        [31m│
+[31m│[39m    31 │   │   [94mtry[39m:                                                                       [31m│
+[31m│[39m    32 │   │   │   torch.set_grad_enabled([96mself[39m.defaults[[33m'differentiable'[39m])                [31m│
+[31m│[39m [31m❱ [39m 33 │   │   │   ret = func([96mself[39m, *args, **kwargs)                                      [31m│
+[31m│[39m    34 │   │   [94mfinally[39m:                                                                   [31m│
+[31m│[39m    35 │   │   │   torch.set_grad_enabled(prev_grad)                                      [31m│
+[31m│[39m    36 │   │   [94mreturn[39m ret                                                                 [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/.local/lib/python3.10/site-packages/torch/optim/[1madamw.py[22m:[94m148[39m in [92mstep[39m        [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   145 │   │   loss = [94mNone[39m                                                                [31m│
+[31m│[39m   146 │   │   [94mif[39m closure [95mis[39m [95mnot[39m [94mNone[39m:                                                    [31m│
+[31m│[39m   147 │   │   │   [94mwith[39m torch.enable_grad():                                              [31m│
+[31m│[39m [31m❱ [39m148 │   │   │   │   loss = closure()                                                   [31m│
+[31m│[39m   149 │   │                                                                              [31m│
+[31m│[39m   150 │   │   [94mfor[39m group [95min[39m [96mself[39m.param_groups:                                            [31m│
+[31m│[39m   151 │   │   │   params_with_grad = []                                                  [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightn [31m│
+[31m│[39m ing/plugins/precision/[1mprecision_plugin.py[22m:[94m101[39m in [92m_wrap_closure[39m                           [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m    98 │   │   [33mThe closure (generally) runs ``backward`` so this allows inspecting gradie[39m [31m│
+[31m│[39m    99 │   │   [33mconsistent with the ``PrecisionPlugin`` subclasses that cannot pass ``opti[39m [31m│
+[31m│[39m   100 │   │   [33m"""[39m                                                                        [31m│
+[31m│[39m [31m❱ [39m101 │   │   closure_result = closure()                                                 [31m│
+[31m│[39m   102 │   │   [96mself[39m._after_closure(model, optimizer)                                      [31m│
+[31m│[39m   103 │   │   [94mreturn[39m closure_result                                                      [31m│
+[31m│[39m   104                                                                                    [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightn [31m│
+[31m│[39m ing/loops/optimization/[1mautomatic.py[22m:[94m140[39m in [92m__call__[39m                                      [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   137 │   │   [94mreturn[39m step_output                                                         [31m│
+[31m│[39m   138 │                                                                                  [31m│
+[31m│[39m   139 │   [94mdef[39m [92m__call__[39m([96mself[39m, *args: Any, **kwargs: Any) -> Optional[Tensor]:             [31m│
+[31m│[39m [31m❱ [39m140 │   │   [96mself[39m._result = [96mself[39m.closure(*args, **kwargs)                               [31m│
+[31m│[39m   141 │   │   [94mreturn[39m [96mself[39m._result.loss                                                   [31m│
+[31m│[39m   142                                                                                    [31m│
+[31m│[39m   143                                                                                    [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightn [31m│
+[31m│[39m ing/loops/optimization/[1mautomatic.py[22m:[94m126[39m in [92mclosure[39m                                       [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   123 │   │   [96mself[39m._zero_grad_fn = zero_grad_fn                                          [31m│
+[31m│[39m   124 │                                                                                  [31m│
+[31m│[39m   125 │   [94mdef[39m [92mclosure[39m([96mself[39m, *args: Any, **kwargs: Any) -> ClosureResult:                 [31m│
+[31m│[39m [31m❱ [39m126 │   │   step_output = [96mself[39m._step_fn()                                              [31m│
+[31m│[39m   127 │   │                                                                              [31m│
+[31m│[39m   128 │   │   [94mif[39m step_output.closure_loss [95mis[39m [94mNone[39m:                                       [31m│
+[31m│[39m   129 │   │   │   [96mself[39m.warning_cache.warn([33m"`training_step` returned `None`. If this was [39m [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightn [31m│
+[31m│[39m ing/loops/optimization/[1mautomatic.py[22m:[94m307[39m in [92m_training_step[39m                                [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   304 │   │   trainer = [96mself[39m.trainer                                                     [31m│
+[31m│[39m   305 │   │                                                                              [31m│
+[31m│[39m   306 │   │   # manually capture logged metrics                                          [31m│
+[31m│[39m [31m❱ [39m307 │   │   training_step_output = call._call_strategy_hook(trainer, [33m"training_step"[39m,  [31m│
+[31m│[39m   308 │   │   [96mself[39m.trainer.strategy.post_training_step()                                 [31m│
+[31m│[39m   309 │   │                                                                              [31m│
+[31m│[39m   310 │   │   [94mreturn[39m [96mself[39m.output_result_cls.from_training_step_output(training_step_outp [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightn [31m│
+[31m│[39m ing/trainer/[1mcall.py[22m:[94m287[39m in [92m_call_strategy_hook[39m                                           [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   284 │   │   [94mreturn[39m [94mNone[39m                                                                [31m│
+[31m│[39m   285 │                                                                                  [31m│
+[31m│[39m   286 │   [94mwith[39m trainer.profiler.profile([33mf"[Strategy]{[39mtrainer.strategy.[91m__class__[39m.[91m__name__[39m [31m│
+[31m│[39m [31m❱ [39m287 │   │   output = fn(*args, **kwargs)                                               [31m│
+[31m│[39m   288 │                                                                                  [31m│
+[31m│[39m   289 │   # restore current_fx when nested context                                       [31m│
+[31m│[39m   290 │   pl_module._current_fx_name = prev_fx_name                                      [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightn [31m│
+[31m│[39m ing/strategies/[1mstrategy.py[22m:[94m367[39m in [92mtraining_step[39m                                          [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   364 │   │   [33m"""[39m                                                                        [31m│
+[31m│[39m   365 │   │   [94mwith[39m [96mself[39m.precision_plugin.train_step_context():                           [31m│
+[31m│[39m   366 │   │   │   [94massert[39m [96misinstance[39m([96mself[39m.model, TrainingStep)                            [31m│
+[31m│[39m [31m❱ [39m367 │   │   │   [94mreturn[39m [96mself[39m.model.training_step(*args, **kwargs)                       [31m│
+[31m│[39m   368 │                                                                                  [31m│
+[31m│[39m   369 │   [94mdef[39m [92mpost_training_step[39m([96mself[39m) -> [94mNone[39m:                                          [31m│
+[31m│[39m   370 │   │   [94mpass[39m                                                                       [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/Documenti/Computer Science/Natural Language                                 [31m│
+[31m│[39m Procesing/nlp2023-hw2/hw2/stud/[1mbiencoder.py[22m:[94m76[39m in [92mtraining_step[39m                          [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m    73 │                                                                                  [31m│
+[31m│[39m    74 │   [94mdef[39m [92mtraining_step[39m([96mself[39m, batch, batch_idx):                                     [31m│
+[31m│[39m    75 │   │   context_input_ids, context_attention_mask, context_output_mask, gold_sense [31m│
+[31m│[39m [31m❱ [39m 76 │   │   cross_dot = [96mself[39m.forward(gloss_input_ids, gloss_attention_mask, context_in [31m│
+[31m│[39m    77 │   │   # add padding to the labels                                                [31m│
+[31m│[39m    78 │   │   padded_gold_input_idx = torch.ones_like(cross_dot) * -[94m100[39m                  [31m│
+[31m│[39m    79 │   │   [94mfor[39m idx [95min[39m [96mrange[39m([96mlen[39m(gold_senses_idx)):                                    [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/Documenti/Computer Science/Natural Language                                 [31m│
+[31m│[39m Procesing/nlp2023-hw2/hw2/stud/[1mbiencoder.py[22m:[94m55[39m in [92mforward[39m                                [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m    52 │   │   res = []                                                                   [31m│
+[31m│[39m    53 │   │   [94mfor[39m i [95min[39m [96mrange[39m([96mlen[39m(gloss_input_ids)):                                      [31m│
+[31m│[39m    54 │   │   │   context_hidden_states = [96mself[39m.context_encoder(context_input_ids[i], con [31m│
+[31m│[39m [31m❱ [39m 55 │   │   │   gloss_hidden_states = [96mself[39m.gloss_encoder(gloss_input_ids[i], gloss_att [31m│
+[31m│[39m    56 │   │   │                                                                          [31m│
+[31m│[39m    57 │   │   │   cross_dot = torch.mm(gloss_hidden_states, context_hidden_states.T)     [31m│
+[31m│[39m    58 │   │   │   res.append(cross_dot)                                                  [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/.local/lib/python3.10/site-packages/torch/nn/modules/[1mmodule.py[22m:[94m1501[39m in      [31m│
+[31m│[39m [92m_call_impl[39m                                                                               [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   1498 │   │   [94mif[39m [95mnot[39m ([96mself[39m._backward_hooks [95mor[39m [96mself[39m._backward_pre_hooks [95mor[39m [96mself[39m._forward [31m│
+[31m│[39m   1499 │   │   │   │   [95mor[39m _global_backward_pre_hooks [95mor[39m _global_backward_hooks           [31m│
+[31m│[39m   1500 │   │   │   │   [95mor[39m _global_forward_hooks [95mor[39m _global_forward_pre_hooks):           [31m│
+[31m│[39m [31m❱ [39m1501 │   │   │   [94mreturn[39m forward_call(*args, **kwargs)                                  [31m│
+[31m│[39m   1502 │   │   # Do not call functions when jit is used                                  [31m│
+[31m│[39m   1503 │   │   full_backward_hooks, non_full_backward_hooks = [], []                     [31m│
+[31m│[39m   1504 │   │   backward_pre_hooks = []                                                   [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/Documenti/Computer Science/Natural Language                                 [31m│
+[31m│[39m Procesing/nlp2023-hw2/hw2/stud/[1mbiencoder.py[22m:[94m22[39m in [92mforward[39m                                [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m    19 │   │   [96mself[39m.model_name = model_name                                               [31m│
+[31m│[39m    20 │                                                                                  [31m│
+[31m│[39m    21 │   [94mdef[39m [92mforward[39m([96mself[39m, input_ids, attention_mask):                                  [31m│
+[31m│[39m [31m❱ [39m 22 │   │   [94mreturn[39m [96mself[39m.model(input_ids, attention_mask=attention_mask).last_hidden_st [31m│
+[31m│[39m    23                                                                                    [31m│
+[31m│[39m    24 [94mclass[39m [4mContextEncoder[24m(torch.nn.Module):                                             [31m│
+[31m│[39m    25 │   [33m'''[39m                                                                            [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/.local/lib/python3.10/site-packages/torch/nn/modules/[1mmodule.py[22m:[94m1501[39m in      [31m│
+[31m│[39m [92m_call_impl[39m                                                                               [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   1498 │   │   [94mif[39m [95mnot[39m ([96mself[39m._backward_hooks [95mor[39m [96mself[39m._backward_pre_hooks [95mor[39m [96mself[39m._forward [31m│
+[31m│[39m   1499 │   │   │   │   [95mor[39m _global_backward_pre_hooks [95mor[39m _global_backward_hooks           [31m│
+[31m│[39m   1500 │   │   │   │   [95mor[39m _global_forward_hooks [95mor[39m _global_forward_pre_hooks):           [31m│
+[31m│[39m [31m❱ [39m1501 │   │   │   [94mreturn[39m forward_call(*args, **kwargs)                                  [31m│
+[31m│[39m   1502 │   │   # Do not call functions when jit is used                                  [31m│
+[31m│[39m   1503 │   │   full_backward_hooks, non_full_backward_hooks = [], []                     [31m│
+[31m│[39m   1504 │   │   backward_pre_hooks = []                                                   [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/.local/lib/python3.10/site-packages/transformers/models/bert/[1mmodeling_bert.[22m [31m│
+[31m│[39m [1mpy[22m:[94m1021[39m in [92mforward[39m                                                                       [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   1018 │   │   │   inputs_embeds=inputs_embeds,                                          [31m│
+[31m│[39m   1019 │   │   │   past_key_values_length=past_key_values_length,                        [31m│
+[31m│[39m   1020 │   │   )                                                                         [31m│
+[31m│[39m [31m❱ [39m1021 │   │   encoder_outputs = [96mself[39m.encoder(                                           [31m│
+[31m│[39m   1022 │   │   │   embedding_output,                                                     [31m│
+[31m│[39m   1023 │   │   │   attention_mask=extended_attention_mask,                               [31m│
+[31m│[39m   1024 │   │   │   head_mask=head_mask,                                                  [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/.local/lib/python3.10/site-packages/torch/nn/modules/[1mmodule.py[22m:[94m1501[39m in      [31m│
+[31m│[39m [92m_call_impl[39m                                                                               [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   1498 │   │   [94mif[39m [95mnot[39m ([96mself[39m._backward_hooks [95mor[39m [96mself[39m._backward_pre_hooks [95mor[39m [96mself[39m._forward [31m│
+[31m│[39m   1499 │   │   │   │   [95mor[39m _global_backward_pre_hooks [95mor[39m _global_backward_hooks           [31m│
+[31m│[39m   1500 │   │   │   │   [95mor[39m _global_forward_hooks [95mor[39m _global_forward_pre_hooks):           [31m│
+[31m│[39m [31m❱ [39m1501 │   │   │   [94mreturn[39m forward_call(*args, **kwargs)                                  [31m│
+[31m│[39m   1502 │   │   # Do not call functions when jit is used                                  [31m│
+[31m│[39m   1503 │   │   full_backward_hooks, non_full_backward_hooks = [], []                     [31m│
+[31m│[39m   1504 │   │   backward_pre_hooks = []                                                   [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/.local/lib/python3.10/site-packages/transformers/models/bert/[1mmodeling_bert.[22m [31m│
+[31m│[39m [1mpy[22m:[94m610[39m in [92mforward[39m                                                                        [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m    607 │   │   │   │   │   encoder_attention_mask,                                       [31m│
+[31m│[39m    608 │   │   │   │   )                                                                 [31m│
+[31m│[39m    609 │   │   │   [94melse[39m:                                                                 [31m│
+[31m│[39m [31m❱ [39m 610 │   │   │   │   layer_outputs = layer_module(                                     [31m│
+[31m│[39m    611 │   │   │   │   │   hidden_states,                                                [31m│
+[31m│[39m    612 │   │   │   │   │   attention_mask,                                               [31m│
+[31m│[39m    613 │   │   │   │   │   layer_head_mask,                                              [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/.local/lib/python3.10/site-packages/torch/nn/modules/[1mmodule.py[22m:[94m1501[39m in      [31m│
+[31m│[39m [92m_call_impl[39m                                                                               [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   1498 │   │   [94mif[39m [95mnot[39m ([96mself[39m._backward_hooks [95mor[39m [96mself[39m._backward_pre_hooks [95mor[39m [96mself[39m._forward [31m│
+[31m│[39m   1499 │   │   │   │   [95mor[39m _global_backward_pre_hooks [95mor[39m _global_backward_hooks           [31m│
+[31m│[39m   1500 │   │   │   │   [95mor[39m _global_forward_hooks [95mor[39m _global_forward_pre_hooks):           [31m│
+[31m│[39m [31m❱ [39m1501 │   │   │   [94mreturn[39m forward_call(*args, **kwargs)                                  [31m│
+[31m│[39m   1502 │   │   # Do not call functions when jit is used                                  [31m│
+[31m│[39m   1503 │   │   full_backward_hooks, non_full_backward_hooks = [], []                     [31m│
+[31m│[39m   1504 │   │   backward_pre_hooks = []                                                   [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/.local/lib/python3.10/site-packages/transformers/models/bert/[1mmodeling_bert.[22m [31m│
+[31m│[39m [1mpy[22m:[94m496[39m in [92mforward[39m                                                                        [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m    493 │   ) -> Tuple[torch.Tensor]:                                                     [31m│
+[31m│[39m    494 │   │   # decoder uni-directional self-attention cached key/values tuple is at po [31m│
+[31m│[39m    495 │   │   self_attn_past_key_value = past_key_value[:[94m2[39m] [94mif[39m past_key_value [95mis[39m [95mnot[39m [94mNo[39m [31m│
+[31m│[39m [31m❱ [39m 496 │   │   self_attention_outputs = [96mself[39m.attention(                                  [31m│
+[31m│[39m    497 │   │   │   hidden_states,                                                        [31m│
+[31m│[39m    498 │   │   │   attention_mask,                                                       [31m│
+[31m│[39m    499 │   │   │   head_mask,                                                            [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/.local/lib/python3.10/site-packages/torch/nn/modules/[1mmodule.py[22m:[94m1501[39m in      [31m│
+[31m│[39m [92m_call_impl[39m                                                                               [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   1498 │   │   [94mif[39m [95mnot[39m ([96mself[39m._backward_hooks [95mor[39m [96mself[39m._backward_pre_hooks [95mor[39m [96mself[39m._forward [31m│
+[31m│[39m   1499 │   │   │   │   [95mor[39m _global_backward_pre_hooks [95mor[39m _global_backward_hooks           [31m│
+[31m│[39m   1500 │   │   │   │   [95mor[39m _global_forward_hooks [95mor[39m _global_forward_pre_hooks):           [31m│
+[31m│[39m [31m❱ [39m1501 │   │   │   [94mreturn[39m forward_call(*args, **kwargs)                                  [31m│
+[31m│[39m   1502 │   │   # Do not call functions when jit is used                                  [31m│
+[31m│[39m   1503 │   │   full_backward_hooks, non_full_backward_hooks = [], []                     [31m│
+[31m│[39m   1504 │   │   backward_pre_hooks = []                                                   [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/.local/lib/python3.10/site-packages/transformers/models/bert/[1mmodeling_bert.[22m [31m│
+[31m│[39m [1mpy[22m:[94m426[39m in [92mforward[39m                                                                        [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m    423 │   │   past_key_value: Optional[Tuple[Tuple[torch.FloatTensor]]] = [94mNone[39m,         [31m│
+[31m│[39m    424 │   │   output_attentions: Optional[[96mbool[39m] = [94mFalse[39m,                                [31m│
+[31m│[39m    425 │   ) -> Tuple[torch.Tensor]:                                                     [31m│
+[31m│[39m [31m❱ [39m 426 │   │   self_outputs = [96mself[39m.self(                                                 [31m│
+[31m│[39m    427 │   │   │   hidden_states,                                                        [31m│
+[31m│[39m    428 │   │   │   attention_mask,                                                       [31m│
+[31m│[39m    429 │   │   │   head_mask,                                                            [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/.local/lib/python3.10/site-packages/torch/nn/modules/[1mmodule.py[22m:[94m1501[39m in      [31m│
+[31m│[39m [92m_call_impl[39m                                                                               [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   1498 │   │   [94mif[39m [95mnot[39m ([96mself[39m._backward_hooks [95mor[39m [96mself[39m._backward_pre_hooks [95mor[39m [96mself[39m._forward [31m│
+[31m│[39m   1499 │   │   │   │   [95mor[39m _global_backward_pre_hooks [95mor[39m _global_backward_hooks           [31m│
+[31m│[39m   1500 │   │   │   │   [95mor[39m _global_forward_hooks [95mor[39m _global_forward_pre_hooks):           [31m│
+[31m│[39m [31m❱ [39m1501 │   │   │   [94mreturn[39m forward_call(*args, **kwargs)                                  [31m│
+[31m│[39m   1502 │   │   # Do not call functions when jit is used                                  [31m│
+[31m│[39m   1503 │   │   full_backward_hooks, non_full_backward_hooks = [], []                     [31m│
+[31m│[39m   1504 │   │   backward_pre_hooks = []                                                   [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/.local/lib/python3.10/site-packages/transformers/models/bert/[1mmodeling_bert.[22m [31m│
+[31m│[39m [1mpy[22m:[94m358[39m in [92mforward[39m                                                                        [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m    355 │   │                                                                             [31m│
+[31m│[39m    356 │   │   # This is actually dropping out entire tokens to attend to, which might   [31m│
+[31m│[39m    357 │   │   # seem a bit unusual, but is taken from the original Transformer paper.   [31m│
+[31m│[39m [31m❱ [39m 358 │   │   attention_probs = [96mself[39m.dropout(attention_probs)                           [31m│
+[31m│[39m    359 │   │                                                                             [31m│
+[31m│[39m    360 │   │   # Mask heads if we want to                                                [31m│
+[31m│[39m    361 │   │   [94mif[39m head_mask [95mis[39m [95mnot[39m [94mNone[39m:                                                 [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/.local/lib/python3.10/site-packages/torch/nn/modules/[1mmodule.py[22m:[94m1501[39m in      [31m│
+[31m│[39m [92m_call_impl[39m                                                                               [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   1498 │   │   [94mif[39m [95mnot[39m ([96mself[39m._backward_hooks [95mor[39m [96mself[39m._backward_pre_hooks [95mor[39m [96mself[39m._forward [31m│
+[31m│[39m   1499 │   │   │   │   [95mor[39m _global_backward_pre_hooks [95mor[39m _global_backward_hooks           [31m│
+[31m│[39m   1500 │   │   │   │   [95mor[39m _global_forward_hooks [95mor[39m _global_forward_pre_hooks):           [31m│
+[31m│[39m [31m❱ [39m1501 │   │   │   [94mreturn[39m forward_call(*args, **kwargs)                                  [31m│
+[31m│[39m   1502 │   │   # Do not call functions when jit is used                                  [31m│
+[31m│[39m   1503 │   │   full_backward_hooks, non_full_backward_hooks = [], []                     [31m│
+[31m│[39m   1504 │   │   backward_pre_hooks = []                                                   [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/.local/lib/python3.10/site-packages/torch/nn/modules/[1mdropout.py[22m:[94m59[39m in       [31m│
+[31m│[39m [92mforward[39m                                                                                  [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m    56 │   [33m"""[39m                                                                            [31m│
+[31m│[39m    57 │                                                                                  [31m│
+[31m│[39m    58 │   [94mdef[39m [92mforward[39m([96mself[39m, [96minput[39m: Tensor) -> Tensor:                                    [31m│
+[31m│[39m [31m❱ [39m 59 │   │   [94mreturn[39m F.dropout([96minput[39m, [96mself[39m.p, [96mself[39m.training, [96mself[39m.inplace)               [31m│
+[31m│[39m    60                                                                                    [31m│
+[31m│[39m    61                                                                                    [31m│
+[31m│[39m    62 [94mclass[39m [4mDropout1d[24m(_DropoutNd):                                                       [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m /home/andrea/.local/lib/python3.10/site-packages/torch/nn/[1mfunctional.py[22m:[94m1252[39m in [92mdropout[39m  [31m│
+[31m│[39m                                                                                          [31m│
+[31m│[39m   1249 │   │   [94mreturn[39m handle_torch_function(dropout, ([96minput[39m,), [96minput[39m, p=p, training=trai [31m│
+[31m│[39m   1250 │   [94mif[39m p < [94m0.0[39m [95mor[39m p > [94m1.0[39m:                                                        [31m│
+[31m│[39m   1251 │   │   [94mraise[39m [96mValueError[39m([33m"dropout probability has to be between 0 and 1, "[39m [33m"but g[39m [31m│
+[31m│[39m [31m❱ [39m1252 │   [94mreturn[39m _VF.dropout_([96minput[39m, p, training) [94mif[39m inplace [94melse[39m _VF.dropout([96minput[39m, p, [31m│
+[31m│[39m   1253                                                                                   [31m│
+[31m│[39m   1254                                                                                   [31m│
+[31m│[39m   1255 [94mdef[39m [92malpha_dropout[39m([96minput[39m: Tensor, p: [96mfloat[39m = [94m0.5[39m, training: [96mbool[39m = [94mFalse[39m, inplace: [31m│
+[31m╰──────────────────────────────────────────────────────────────────────────────────────────╯
+[1mOutOfMemoryError: [22mCUDA out of memory. Tried to allocate [1m34.00[22m MiB [1m([22mGPU [1m0[22m; [1m23.67[22m GiB total
+capacity; [1m22.05[22m GiB already allocated; [1m42.44[22m MiB free; [1m22.22[22m GiB reserved in total by
+PyTorch[1m)[22m If reserved memory is >> allocated memory try setting max_split_size_mb to avoid
+fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

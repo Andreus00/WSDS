@@ -1,0 +1,47 @@
+2023-06-22 16:24:49,866 INFO    StreamThr :900833 [internal.py:wandb_internal():86] W&B internal server running at pid: 900833, started at: 2023-06-22 16:24:49.866444
+2023-06-22 16:24:49,868 DEBUG   HandlerThread:900833 [handler.py:handle_request():144] handle_request: status
+2023-06-22 16:24:49,873 INFO    WriterThread:900833 [datastore.py:open_for_write():85] open: ./wandb/run-20230622_162449-o9r94sjj/run-o9r94sjj.wandb
+2023-06-22 16:24:49,874 DEBUG   SenderThread:900833 [sender.py:send():375] send: header
+2023-06-22 16:24:49,877 DEBUG   SenderThread:900833 [sender.py:send():375] send: run
+2023-06-22 16:24:49,881 INFO    SenderThread:900833 [sender.py:_maybe_setup_resume():761] checking resume status for andr3us/nlp2023-hw2/o9r94sjj
+2023-06-22 16:24:50,104 INFO    SenderThread:900833 [sender.py:_maybe_setup_resume():833] configured resuming with: ResumeState(resumed=True,step=1,history=0,events=0,output=0,runtime=0,wandb_runtime=None,summary={},config={'lr': {'value': 0.0001}, 'loss': {'value': 'cross_entropy'}, 'epochs': {'value': 10}, 'max_len': {'value': 128}, 'batch_size': {'value': 8}, 'weight_decay': {'value': 0}, 'gloss_model_name': {'value': 'bert-base-cased'}, 'gradient_clipping': {'value': 2}, 'sentence_model_name': {'value': 'bert-base-cased'}})
+2023-06-22 16:24:50,515 INFO    SenderThread:900833 [dir_watcher.py:__init__():219] watching files in: ./wandb/run-20230622_162449-o9r94sjj/files
+2023-06-22 16:24:50,515 INFO    SenderThread:900833 [sender.py:_start_run_threads():1124] run started: o9r94sjj with start time 1687443889.867934
+2023-06-22 16:24:50,515 DEBUG   SenderThread:900833 [sender.py:send_request():402] send_request: summary_record
+2023-06-22 16:24:50,515 INFO    SenderThread:900833 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-22 16:24:50,517 DEBUG   HandlerThread:900833 [handler.py:handle_request():144] handle_request: check_version
+2023-06-22 16:24:50,518 DEBUG   SenderThread:900833 [sender.py:send_request():402] send_request: check_version
+2023-06-22 16:24:50,631 DEBUG   HandlerThread:900833 [handler.py:handle_request():144] handle_request: run_start
+2023-06-22 16:24:50,636 DEBUG   HandlerThread:900833 [system_info.py:__init__():31] System info init
+2023-06-22 16:24:50,636 DEBUG   HandlerThread:900833 [system_info.py:__init__():46] System info init done
+2023-06-22 16:24:50,636 INFO    HandlerThread:900833 [system_monitor.py:start():181] Starting system monitor
+2023-06-22 16:24:50,637 INFO    SystemMonitor:900833 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-22 16:24:50,637 INFO    SystemMonitor:900833 [interfaces.py:start():190] Started cpu monitoring
+2023-06-22 16:24:50,638 INFO    SystemMonitor:900833 [interfaces.py:start():190] Started disk monitoring
+2023-06-22 16:24:50,639 INFO    SystemMonitor:900833 [interfaces.py:start():190] Started gpu monitoring
+2023-06-22 16:24:50,640 INFO    SystemMonitor:900833 [interfaces.py:start():190] Started memory monitoring
+2023-06-22 16:24:50,641 INFO    SystemMonitor:900833 [interfaces.py:start():190] Started network monitoring
+2023-06-22 16:24:50,648 DEBUG   HandlerThread:900833 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 16:24:50,648 DEBUG   SenderThread:900833 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 16:24:50,805 DEBUG   SenderThread:900833 [sender.py:send():375] send: telemetry
+2023-06-22 16:24:50,805 DEBUG   SenderThread:900833 [sender.py:send():375] send: metric
+2023-06-22 16:24:50,805 DEBUG   SenderThread:900833 [sender.py:send():375] send: telemetry
+2023-06-22 16:24:50,805 DEBUG   SenderThread:900833 [sender.py:send():375] send: metric
+2023-06-22 16:24:50,805 WARNING SenderThread:900833 [sender.py:send_metric():1329] Seen metric with glob (shouldn't happen)
+2023-06-22 16:24:51,517 INFO    Thread-17 :900833 [dir_watcher.py:_on_file_created():278] file/dir created: ./wandb/run-20230622_162449-o9r94sjj/files/wandb-summary.json
+2023-06-22 16:24:55,806 DEBUG   HandlerThread:900833 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:25:00,806 DEBUG   HandlerThread:900833 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:25:05,648 DEBUG   HandlerThread:900833 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 16:25:05,649 DEBUG   SenderThread:900833 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 16:25:05,807 DEBUG   HandlerThread:900833 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:25:10,808 DEBUG   HandlerThread:900833 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:25:15,808 DEBUG   HandlerThread:900833 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:25:20,649 DEBUG   HandlerThread:900833 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 16:25:20,650 DEBUG   SenderThread:900833 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 16:25:20,824 DEBUG   HandlerThread:900833 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:25:22,522 INFO    Thread-17 :900833 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_162449-o9r94sjj/files/config.yaml
+2023-06-22 16:25:27,124 DEBUG   HandlerThread:900833 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:25:32,124 DEBUG   HandlerThread:900833 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:25:35,648 DEBUG   HandlerThread:900833 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 16:25:35,649 DEBUG   SenderThread:900833 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 16:25:37,800 DEBUG   HandlerThread:900833 [handler.py:handle_request():144] handle_request: status_report

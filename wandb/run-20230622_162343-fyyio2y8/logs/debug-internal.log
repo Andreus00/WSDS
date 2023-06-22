@@ -1,0 +1,79 @@
+2023-06-22 16:23:43,440 INFO    StreamThr :899645 [internal.py:wandb_internal():86] W&B internal server running at pid: 899645, started at: 2023-06-22 16:23:43.440010
+2023-06-22 16:23:43,441 DEBUG   HandlerThread:899645 [handler.py:handle_request():144] handle_request: status
+2023-06-22 16:23:43,446 INFO    WriterThread:899645 [datastore.py:open_for_write():85] open: ./wandb/run-20230622_162343-fyyio2y8/run-fyyio2y8.wandb
+2023-06-22 16:23:43,447 DEBUG   SenderThread:899645 [sender.py:send():375] send: header
+2023-06-22 16:23:43,451 DEBUG   SenderThread:899645 [sender.py:send():375] send: run
+2023-06-22 16:23:43,455 INFO    SenderThread:899645 [sender.py:_maybe_setup_resume():761] checking resume status for andr3us/nlp2023-hw2/fyyio2y8
+2023-06-22 16:23:43,663 INFO    SenderThread:899645 [sender.py:_maybe_setup_resume():833] configured resuming with: ResumeState(resumed=True,step=1,history=0,events=0,output=0,runtime=0,wandb_runtime=None,summary={},config={'lr': {'value': 0.0001}, 'loss': {'value': 'cross_entropy'}, 'epochs': {'value': 10}, 'max_len': {'value': 128}, 'batch_size': {'value': 8}, 'weight_decay': {'value': 0}, 'gloss_model_name': {'value': 'bert-base-cased'}, 'gradient_clipping': {'value': 2}, 'sentence_model_name': {'value': 'bert-base-cased'}})
+2023-06-22 16:23:44,042 DEBUG   HandlerThread:899645 [handler.py:handle_request():144] handle_request: check_version
+2023-06-22 16:23:44,042 INFO    SenderThread:899645 [dir_watcher.py:__init__():219] watching files in: ./wandb/run-20230622_162343-fyyio2y8/files
+2023-06-22 16:23:44,042 INFO    SenderThread:899645 [sender.py:_start_run_threads():1124] run started: fyyio2y8 with start time 1687443823.441358
+2023-06-22 16:23:44,043 DEBUG   SenderThread:899645 [sender.py:send_request():402] send_request: summary_record
+2023-06-22 16:23:44,043 INFO    SenderThread:899645 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-22 16:23:44,043 DEBUG   SenderThread:899645 [sender.py:send_request():402] send_request: check_version
+2023-06-22 16:23:44,241 DEBUG   HandlerThread:899645 [handler.py:handle_request():144] handle_request: run_start
+2023-06-22 16:23:44,246 DEBUG   HandlerThread:899645 [system_info.py:__init__():31] System info init
+2023-06-22 16:23:44,246 DEBUG   HandlerThread:899645 [system_info.py:__init__():46] System info init done
+2023-06-22 16:23:44,246 INFO    HandlerThread:899645 [system_monitor.py:start():181] Starting system monitor
+2023-06-22 16:23:44,246 INFO    SystemMonitor:899645 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-22 16:23:44,247 INFO    SystemMonitor:899645 [interfaces.py:start():190] Started cpu monitoring
+2023-06-22 16:23:44,248 INFO    SystemMonitor:899645 [interfaces.py:start():190] Started disk monitoring
+2023-06-22 16:23:44,248 INFO    SystemMonitor:899645 [interfaces.py:start():190] Started gpu monitoring
+2023-06-22 16:23:44,250 INFO    SystemMonitor:899645 [interfaces.py:start():190] Started memory monitoring
+2023-06-22 16:23:44,251 INFO    SystemMonitor:899645 [interfaces.py:start():190] Started network monitoring
+2023-06-22 16:23:44,258 DEBUG   SenderThread:899645 [sender.py:send():375] send: telemetry
+2023-06-22 16:23:44,302 DEBUG   HandlerThread:899645 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 16:23:44,303 DEBUG   SenderThread:899645 [sender.py:send():375] send: metric
+2023-06-22 16:23:44,303 DEBUG   SenderThread:899645 [sender.py:send():375] send: telemetry
+2023-06-22 16:23:44,303 DEBUG   SenderThread:899645 [sender.py:send():375] send: metric
+2023-06-22 16:23:44,303 WARNING SenderThread:899645 [sender.py:send_metric():1329] Seen metric with glob (shouldn't happen)
+2023-06-22 16:23:44,303 DEBUG   SenderThread:899645 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 16:23:45,044 INFO    Thread-17 :899645 [dir_watcher.py:_on_file_created():278] file/dir created: ./wandb/run-20230622_162343-fyyio2y8/files/wandb-summary.json
+2023-06-22 16:23:48,472 DEBUG   HandlerThread:899645 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:23:53,472 DEBUG   HandlerThread:899645 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:23:58,473 DEBUG   HandlerThread:899645 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:23:59,257 DEBUG   HandlerThread:899645 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 16:23:59,258 DEBUG   SenderThread:899645 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 16:24:02,046 INFO    Thread-17 :899645 [dir_watcher.py:_on_file_created():278] file/dir created: ./wandb/run-20230622_162343-fyyio2y8/files/output.log
+2023-06-22 16:24:02,177 DEBUG   SenderThread:899645 [sender.py:send():375] send: telemetry
+2023-06-22 16:24:04,047 INFO    Thread-17 :899645 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_162343-fyyio2y8/files/output.log
+2023-06-22 16:24:04,261 DEBUG   HandlerThread:899645 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:24:06,047 INFO    Thread-17 :899645 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_162343-fyyio2y8/files/output.log
+2023-06-22 16:24:08,890 DEBUG   SenderThread:899645 [sender.py:send():375] send: files
+2023-06-22 16:24:08,890 INFO    SenderThread:899645 [sender.py:_save_file():1378] saving file media/graph/graph_0_summary_8eec592d9d57ac7b8e25.graph.json with policy now
+2023-06-22 16:24:08,891 DEBUG   SenderThread:899645 [sender.py:send_request():402] send_request: summary_record
+2023-06-22 16:24:08,891 INFO    SenderThread:899645 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-22 16:24:09,048 INFO    Thread-17 :899645 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_162343-fyyio2y8/files/wandb-summary.json
+2023-06-22 16:24:09,048 INFO    Thread-17 :899645 [dir_watcher.py:_on_file_created():278] file/dir created: ./wandb/run-20230622_162343-fyyio2y8/files/media/graph/graph_0_summary_8eec592d9d57ac7b8e25.graph.json
+2023-06-22 16:24:09,048 INFO    Thread-17 :899645 [dir_watcher.py:_on_file_created():278] file/dir created: ./wandb/run-20230622_162343-fyyio2y8/files/media
+2023-06-22 16:24:09,048 INFO    Thread-17 :899645 [dir_watcher.py:_on_file_created():278] file/dir created: ./wandb/run-20230622_162343-fyyio2y8/files/media/graph
+2023-06-22 16:24:09,316 DEBUG   HandlerThread:899645 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:24:09,416 INFO    wandb-upload_0:899645 [upload_job.py:push():137] Uploaded file /tmp/tmpkdu2shy3wandb/4hjvti9i-media/graph/graph_0_summary_8eec592d9d57ac7b8e25.graph.json
+2023-06-22 16:24:09,935 INFO    wandb-upload_0:899645 [upload_job.py:push():137] Uploaded file /tmp/tmpkdu2shy3wandb/48bu3jyd-media/graph/graph_0_summary_8eec592d9d57ac7b8e25.graph.json
+2023-06-22 16:24:12,049 INFO    Thread-17 :899645 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_162343-fyyio2y8/files/output.log
+2023-06-22 16:24:14,050 INFO    Thread-17 :899645 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_162343-fyyio2y8/files/output.log
+2023-06-22 16:24:14,257 DEBUG   HandlerThread:899645 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 16:24:14,258 DEBUG   SenderThread:899645 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 16:24:14,414 DEBUG   HandlerThread:899645 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:24:15,051 INFO    Thread-17 :899645 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_162343-fyyio2y8/files/config.yaml
+2023-06-22 16:24:16,051 INFO    Thread-17 :899645 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_162343-fyyio2y8/files/output.log
+2023-06-22 16:24:18,052 INFO    Thread-17 :899645 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_162343-fyyio2y8/files/output.log
+2023-06-22 16:24:19,831 DEBUG   HandlerThread:899645 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:24:20,052 INFO    Thread-17 :899645 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_162343-fyyio2y8/files/output.log
+2023-06-22 16:24:21,556 DEBUG   HandlerThread:899645 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-22 16:24:21,558 DEBUG   SenderThread:899645 [sender.py:send():375] send: metric
+2023-06-22 16:24:21,558 DEBUG   SenderThread:899645 [sender.py:send():375] send: metric
+2023-06-22 16:24:21,558 DEBUG   SenderThread:899645 [sender.py:send():375] send: history
+2023-06-22 16:24:21,558 DEBUG   SenderThread:899645 [sender.py:send_request():402] send_request: summary_record
+2023-06-22 16:24:21,559 INFO    SenderThread:899645 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-22 16:24:22,053 INFO    Thread-17 :899645 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_162343-fyyio2y8/files/output.log
+2023-06-22 16:24:22,053 INFO    Thread-17 :899645 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_162343-fyyio2y8/files/wandb-summary.json
+2023-06-22 16:24:24,054 INFO    Thread-17 :899645 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_162343-fyyio2y8/files/output.log
+2023-06-22 16:24:24,844 DEBUG   HandlerThread:899645 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:24:26,055 INFO    Thread-17 :899645 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_162343-fyyio2y8/files/output.log
+2023-06-22 16:24:28,056 INFO    Thread-17 :899645 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_162343-fyyio2y8/files/output.log
+2023-06-22 16:24:29,257 DEBUG   HandlerThread:899645 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-22 16:24:29,258 DEBUG   SenderThread:899645 [sender.py:send_request():402] send_request: stop_status
+2023-06-22 16:24:29,996 DEBUG   HandlerThread:899645 [handler.py:handle_request():144] handle_request: status_report
+2023-06-22 16:24:30,056 INFO    Thread-17 :899645 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_162343-fyyio2y8/files/output.log
+2023-06-22 16:24:32,058 INFO    Thread-17 :899645 [dir_watcher.py:_on_file_modified():295] file/dir modified: ./wandb/run-20230622_162343-fyyio2y8/files/output.log

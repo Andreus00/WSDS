@@ -1,0 +1,56 @@
+2023-06-19 12:30:02,981 INFO    StreamThr :21904 [internal.py:wandb_internal():86] W&B internal server running at pid: 21904, started at: 2023-06-19 12:30:02.980819
+2023-06-19 12:30:02,983 DEBUG   HandlerThread:21904 [handler.py:handle_request():144] handle_request: status
+2023-06-19 12:30:02,986 INFO    WriterThread:21904 [datastore.py:open_for_write():85] open: ./wandb/run-20230619_123002-fqqee86d/run-fqqee86d.wandb
+2023-06-19 12:30:02,986 DEBUG   SenderThread:21904 [sender.py:send():369] send: header
+2023-06-19 12:30:03,009 DEBUG   SenderThread:21904 [sender.py:send():369] send: run
+2023-06-19 12:30:03,012 INFO    SenderThread:21904 [sender.py:_maybe_setup_resume():737] checking resume status for None/nlp2023-hw2/fqqee86d
+2023-06-19 12:30:03,671 INFO    SenderThread:21904 [dir_watcher.py:__init__():211] watching files in: ./wandb/run-20230619_123002-fqqee86d/files
+2023-06-19 12:30:03,671 INFO    SenderThread:21904 [sender.py:_start_run_threads():1100] run started: fqqee86d with start time 1687170602.98015
+2023-06-19 12:30:03,672 DEBUG   SenderThread:21904 [sender.py:send_request():396] send_request: summary_record
+2023-06-19 12:30:03,672 INFO    SenderThread:21904 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-06-19 12:30:03,674 DEBUG   HandlerThread:21904 [handler.py:handle_request():144] handle_request: check_version
+2023-06-19 12:30:03,675 DEBUG   SenderThread:21904 [sender.py:send_request():396] send_request: check_version
+2023-06-19 12:30:03,820 DEBUG   HandlerThread:21904 [handler.py:handle_request():144] handle_request: run_start
+2023-06-19 12:30:03,824 DEBUG   HandlerThread:21904 [system_info.py:__init__():31] System info init
+2023-06-19 12:30:03,825 DEBUG   HandlerThread:21904 [system_info.py:__init__():46] System info init done
+2023-06-19 12:30:03,825 INFO    HandlerThread:21904 [system_monitor.py:start():181] Starting system monitor
+2023-06-19 12:30:03,825 INFO    HandlerThread:21904 [system_monitor.py:probe():201] Collecting system info
+2023-06-19 12:30:03,825 INFO    SystemMonitor:21904 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-19 12:30:03,827 INFO    SystemMonitor:21904 [interfaces.py:start():190] Started cpu monitoring
+2023-06-19 12:30:03,827 INFO    SystemMonitor:21904 [interfaces.py:start():190] Started disk monitoring
+2023-06-19 12:30:03,829 INFO    SystemMonitor:21904 [interfaces.py:start():190] Started gpu monitoring
+2023-06-19 12:30:03,829 INFO    SystemMonitor:21904 [interfaces.py:start():190] Started memory monitoring
+2023-06-19 12:30:03,830 INFO    SystemMonitor:21904 [interfaces.py:start():190] Started network monitoring
+2023-06-19 12:30:03,855 DEBUG   HandlerThread:21904 [system_info.py:probe():195] Probing system
+2023-06-19 12:30:03,859 DEBUG   HandlerThread:21904 [system_info.py:_probe_git():180] Probing git
+2023-06-19 12:30:03,866 DEBUG   HandlerThread:21904 [system_info.py:_probe_git():188] Probing git done
+2023-06-19 12:30:03,866 DEBUG   HandlerThread:21904 [system_info.py:probe():240] Probing system done
+2023-06-19 12:30:03,866 DEBUG   HandlerThread:21904 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-75-generic-x86_64-with-glibc2.35', 'python': '3.9.16', 'heartbeatAt': '2023-06-19T10:30:03.855107', 'startedAt': '2023-06-19T10:30:02.972068', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/train_model.py', 'git': {'remote': 'https://github.com/SapienzaNLP/nlp2023-hw2.git', 'commit': 'e09072800dbc48addb060d7e09ea96728343636f'}, 'email': 'sanchietti.1883210@studenti.uniroma1.it', 'root': '/home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2', 'host': 'andrea-Pc', 'username': 'andrea', 'executable': '/home/andrea/miniconda3/envs/nlp2023-hw2/bin/python', 'cpu_count': 12, 'cpu_count_logical': 20, 'cpu_freq': {'current': 2219.9254499999997, 'min': 800.0, 'max': 4580.0}, 'cpu_freq_per_core': [{'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4900.0}, {'current': 2100.0, 'min': 800.0, 'max': 4900.0}, {'current': 2100.0, 'min': 800.0, 'max': 4900.0}, {'current': 2100.0, 'min': 800.0, 'max': 4900.0}, {'current': 4490.214, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 4498.509, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 3600.0}, {'current': 2100.0, 'min': 800.0, 'max': 3600.0}, {'current': 2100.0, 'min': 800.0, 'max': 3600.0}, {'current': 2100.0, 'min': 800.0, 'max': 3600.0}], 'disk': {'total': 250.59968948364258, 'used': 180.92367935180664}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 31.15399169921875}}
+2023-06-19 12:30:03,866 INFO    HandlerThread:21904 [system_monitor.py:probe():211] Finished collecting system info
+2023-06-19 12:30:03,866 INFO    HandlerThread:21904 [system_monitor.py:probe():214] Publishing system info
+2023-06-19 12:30:03,866 DEBUG   HandlerThread:21904 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-06-19 12:30:03,867 DEBUG   HandlerThread:21904 [system_info.py:_save_pip():67] Saving pip packages done
+2023-06-19 12:30:03,867 DEBUG   HandlerThread:21904 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-06-19 12:30:04,673 INFO    Thread-17 :21904 [dir_watcher.py:_on_file_created():272] file/dir created: ./wandb/run-20230619_123002-fqqee86d/files/conda-environment.yaml
+2023-06-19 12:30:04,674 INFO    Thread-17 :21904 [dir_watcher.py:_on_file_created():272] file/dir created: ./wandb/run-20230619_123002-fqqee86d/files/wandb-summary.json
+2023-06-19 12:30:04,674 INFO    Thread-17 :21904 [dir_watcher.py:_on_file_created():272] file/dir created: ./wandb/run-20230619_123002-fqqee86d/files/requirements.txt
+2023-06-19 12:30:04,778 DEBUG   HandlerThread:21904 [system_info.py:_save_conda():86] Saving conda packages done
+2023-06-19 12:30:04,780 INFO    HandlerThread:21904 [system_monitor.py:probe():216] Finished publishing system info
+2023-06-19 12:30:04,782 DEBUG   SenderThread:21904 [sender.py:send():369] send: files
+2023-06-19 12:30:04,782 INFO    SenderThread:21904 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2023-06-19 12:30:04,789 DEBUG   HandlerThread:21904 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-19 12:30:04,790 DEBUG   SenderThread:21904 [sender.py:send_request():396] send_request: stop_status
+2023-06-19 12:30:05,000 DEBUG   SenderThread:21904 [sender.py:send():369] send: telemetry
+2023-06-19 12:30:05,001 DEBUG   SenderThread:21904 [sender.py:send():369] send: metric
+2023-06-19 12:30:05,001 DEBUG   SenderThread:21904 [sender.py:send():369] send: telemetry
+2023-06-19 12:30:05,001 DEBUG   SenderThread:21904 [sender.py:send():369] send: metric
+2023-06-19 12:30:05,001 WARNING SenderThread:21904 [sender.py:send_metric():1305] Seen metric with glob (shouldn't happen)
+2023-06-19 12:30:05,328 INFO    wandb-upload_0:21904 [upload_job.py:push():133] Uploaded file /tmp/tmpxgz_hsajwandb/rmnmuw4x-wandb-metadata.json
+2023-06-19 12:30:05,672 INFO    Thread-17 :21904 [dir_watcher.py:_on_file_modified():289] file/dir modified: ./wandb/run-20230619_123002-fqqee86d/files/conda-environment.yaml
+2023-06-19 12:30:05,673 INFO    Thread-17 :21904 [dir_watcher.py:_on_file_created():272] file/dir created: ./wandb/run-20230619_123002-fqqee86d/files/wandb-metadata.json
+2023-06-19 12:30:08,002 DEBUG   HandlerThread:21904 [handler.py:handle_request():144] handle_request: status_report
+2023-06-19 12:30:13,002 DEBUG   HandlerThread:21904 [handler.py:handle_request():144] handle_request: status_report
+2023-06-19 12:30:18,003 DEBUG   HandlerThread:21904 [handler.py:handle_request():144] handle_request: status_report
+2023-06-19 12:30:19,788 DEBUG   HandlerThread:21904 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-19 12:30:19,788 DEBUG   SenderThread:21904 [sender.py:send_request():396] send_request: stop_status
+2023-06-19 12:30:23,943 DEBUG   HandlerThread:21904 [handler.py:handle_request():144] handle_request: status_report

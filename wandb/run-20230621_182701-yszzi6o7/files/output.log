@@ -1,0 +1,277 @@
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loggers/wandb.py:396: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+You are using a CUDA device ('NVIDIA GeForce RTX 3090') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name            | Type             | Params
+-----------------------------------------------------
+0 | gloss_encoder   | GlossEncoder     | 108 M
+1 | context_encoder | ContextEncoder   | 108 M
+2 | loss            | CrossEntropyLoss | 0
+3 | cc              | CosineSimilarity | 0
+-----------------------------------------------------
+216 M     Trainable params
+0         Non-trainable params
+216 M     Total params
+866.482   Total estimated model params size (MB)
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:432: PossibleUserWarning: The dataloader, val_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 20 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/utilities/data.py:120: UserWarning: Your `IterableDataset` has `__len__` defined. In combination with multi-process data loading (when num_workers > 1), `__len__` could be inaccurate if each worker is not configured independently to avoid having duplicate data.
+  rank_zero_warn(
+Sanity Checking DataLoader 0:  50%|█████████████             | 1/2 [00:00<00:00,  1.06it/s]
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/utilities/data.py:76: UserWarning: Trying to infer the `batch_size` from an ambiguous collection. The batch size we found is 8. To avoid any miscalculations, use `self.log(..., batch_size=batch_size)`.
+  warning_cache.warn(
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:432: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 20 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/core/module.py:707: UserWarning: `training_step` must be implemented to be used with the Lightning Trainer
+  rank_zero_warn("`training_step` must be implemented to be used with the Lightning Trainer")
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loops/optimization/automatic.py:129: UserWarning: `training_step` returned `None`. If this was on purpose, ignore this warning...
+Sanity Checking DataLoader 0: 100%|██████████████████████████| 2/2 [00:01<00:00,  1.09it/s]-2851.7807006835938
+
+Epoch 0: 100%|███████████████████████████▉| 2493/2494 [00:03<00:00, 668.22it/s, v_num=i6o7]
+Traceback (most recent call last):
+  File "/home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/train_model.py", line 4, in <module>
+    train()
+  File "/home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/hw2/stud/train.py", line 104, in train
+    trainer.fit(model, train_dataloader, val_dataloader)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 531, in fit
+    call._call_and_handle_interrupt(
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 42, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 570, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 975, in _run
+    results = self._run_stage()
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1018, in _run_stage
+    self.fit_loop.run()
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loops/fit_loop.py", line 201, in run
+    self.advance()
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loops/fit_loop.py", line 354, in advance
+    self.epoch_loop.run(self._data_fetcher)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loops/training_epoch_loop.py", line 133, in run
+    self.advance(data_fetcher)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loops/training_epoch_loop.py", line 189, in advance
+    batch = next(data_fetcher)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loops/fetchers.py", line 136, in __next__
+    self._fetch_next_batch(self.dataloader_iter)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loops/fetchers.py", line 150, in _fetch_next_batch
+    batch = next(iterator)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/utilities/combined_loader.py", line 284, in __next__
+    out = next(self._iterator)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/utilities/combined_loader.py", line 65, in __next__
+    out[i] = next(self.iterators[i])
+  File "/home/andrea/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 634, in __next__
+    data = self._next_data()
+  File "/home/andrea/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 678, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/andrea/.local/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 42, in fetch
+    return self.collate_fn(data)
+  File "/home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/hw2/stud/utils.py", line 26, in collate_fn
+    raise Exception
+Exception
+[31m╭─────────────────────────── [39m[1mTraceback (most recent call last)[31m[22m ───────────────────────────╮
+[31m│[39m                                                                                         [31m│
+[31m│[39m /home/andrea/Documents/Computer Science/Natural Language                                [31m│
+[31m│[39m Procesing/nlp2023-hw2/[1mtrain_model.py[22m:[94m4[39m in [92m<module>[39m                                      [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m   1 [94mfrom[39m [4mhw2.stud.train[24m [94mimport[39m train                                                    [31m│
+[31m│[39m   2                                                                                     [31m│
+[31m│[39m   3 [94mif[39m [91m__name__[39m == [33m'__main__'[39m:                                                          [31m│
+[31m│[39m [31m❱ [39m4 │   train()                                                                         [31m│
+[31m│[39m /home/andrea/Documenti/Computer Science/Natural Language                                [31m│
+[31m│[39m Procesing/nlp2023-hw2/hw2/stud/[1mtrain.py[22m:[94m104[39m in [92mtrain[39m                                    [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m   101 │   │   │   │   │   │    gradient_clip_val=config.gradient_clipping,              [31m│
+[31m│[39m   102 │   │   │   │   │   │    callbacks=[pl.callbacks.EarlyStopping(monitor=[33m'val_loss'[39m [31m│
+[31m│[39m   103 │                                                                                 [31m│
+[31m│[39m [31m❱ [39m104 │   trainer.fit(model, train_dataloader, val_dataloader)                          [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_light [31m│
+[31m│[39m ning/trainer/[1mtrainer.py[22m:[94m531[39m in [92mfit[39m                                                      [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m    528 │   │   [33m"""[39m                                                                      [31m│
+[31m│[39m    529 │   │   model = _maybe_unwrap_optimized(model)                                   [31m│
+[31m│[39m    530 │   │   [96mself[39m.strategy._lightning_module = model                                  [31m│
+[31m│[39m [31m❱ [39m 531 │   │   call._call_and_handle_interrupt(                                         [31m│
+[31m│[39m    532 │   │   │   [96mself[39m, [96mself[39m._fit_impl, model, train_dataloaders, val_dataloaders, dat [31m│
+[31m│[39m    533 │   │   )                                                                        [31m│
+[31m│[39m    534                                                                                  [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_light [31m│
+[31m│[39m ning/trainer/[1mcall.py[22m:[94m42[39m in [92m_call_and_handle_interrupt[39m                                   [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m    39 │   [94mtry[39m:                                                                          [31m│
+[31m│[39m    40 │   │   [94mif[39m trainer.strategy.launcher [95mis[39m [95mnot[39m [94mNone[39m:                                 [31m│
+[31m│[39m    41 │   │   │   [94mreturn[39m trainer.strategy.launcher.launch(trainer_fn, *args, trainer=tr [31m│
+[31m│[39m [31m❱ [39m 42 │   │   [94mreturn[39m trainer_fn(*args, **kwargs)                                        [31m│
+[31m│[39m    43 │                                                                                 [31m│
+[31m│[39m    44 │   [94mexcept[39m _TunerExitException:                                                   [31m│
+[31m│[39m    45 │   │   _call_teardown_hook(trainer)                                              [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_light [31m│
+[31m│[39m ning/trainer/[1mtrainer.py[22m:[94m570[39m in [92m_fit_impl[39m                                                [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m    567 │   │   │   model_provided=[94mTrue[39m,                                                 [31m│
+[31m│[39m    568 │   │   │   model_connected=[96mself[39m.lightning_module [95mis[39m [95mnot[39m [94mNone[39m,                   [31m│
+[31m│[39m    569 │   │   )                                                                        [31m│
+[31m│[39m [31m❱ [39m 570 │   │   [96mself[39m._run(model, ckpt_path=ckpt_path)                                    [31m│
+[31m│[39m    571 │   │                                                                            [31m│
+[31m│[39m    572 │   │   [94massert[39m [96mself[39m.state.stopped                                                [31m│
+[31m│[39m    573 │   │   [96mself[39m.training = [94mFalse[39m                                                    [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_light [31m│
+[31m│[39m ning/trainer/[1mtrainer.py[22m:[94m975[39m in [92m_run[39m                                                     [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m    972 │   │   # ----------------------------                                           [31m│
+[31m│[39m    973 │   │   # RUN THE TRAINER                                                        [31m│
+[31m│[39m    974 │   │   # ----------------------------                                           [31m│
+[31m│[39m [31m❱ [39m 975 │   │   results = [96mself[39m._run_stage()                                              [31m│
+[31m│[39m    976 │   │                                                                            [31m│
+[31m│[39m    977 │   │   # ----------------------------                                           [31m│
+[31m│[39m    978 │   │   # POST-Training CLEAN UP                                                 [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_light [31m│
+[31m│[39m ning/trainer/[1mtrainer.py[22m:[94m1018[39m in [92m_run_stage[39m                                              [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m   1015 │   │   │   [94mwith[39m isolate_rng():                                                  [31m│
+[31m│[39m   1016 │   │   │   │   [96mself[39m._run_sanity_check()                                         [31m│
+[31m│[39m   1017 │   │   │   [94mwith[39m torch.autograd.set_detect_anomaly([96mself[39m._detect_anomaly):        [31m│
+[31m│[39m [31m❱ [39m1018 │   │   │   │   [96mself[39m.fit_loop.run()                                              [31m│
+[31m│[39m   1019 │   │   │   [94mreturn[39m [94mNone[39m                                                          [31m│
+[31m│[39m   1020 │   │   [94mraise[39m [96mRuntimeError[39m([33mf"Unexpected state {[96mself[39m.state[33m}"[39m)                     [31m│
+[31m│[39m   1021                                                                                  [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_light [31m│
+[31m│[39m ning/loops/[1mfit_loop.py[22m:[94m201[39m in [92mrun[39m                                                       [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m   198 │   │   [94mwhile[39m [95mnot[39m [96mself[39m.done:                                                      [31m│
+[31m│[39m   199 │   │   │   [94mtry[39m:                                                                  [31m│
+[31m│[39m   200 │   │   │   │   [96mself[39m.on_advance_start()                                           [31m│
+[31m│[39m [31m❱ [39m201 │   │   │   │   [96mself[39m.advance()                                                    [31m│
+[31m│[39m   202 │   │   │   │   [96mself[39m.on_advance_end()                                             [31m│
+[31m│[39m   203 │   │   │   │   [96mself[39m._restarting = [94mFalse[39m                                          [31m│
+[31m│[39m   204 │   │   │   [94mexcept[39m [96mStopIteration[39m:                                                 [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_light [31m│
+[31m│[39m ning/loops/[1mfit_loop.py[22m:[94m354[39m in [92madvance[39m                                                   [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m   351 │   │   [94massert[39m [96mself[39m._data_fetcher [95mis[39m [95mnot[39m [94mNone[39m                                     [31m│
+[31m│[39m   352 │   │   [96mself[39m._data_fetcher.setup(combined_loader)                                 [31m│
+[31m│[39m   353 │   │   [94mwith[39m [96mself[39m.trainer.profiler.profile([33m"run_training_epoch"[39m):                 [31m│
+[31m│[39m [31m❱ [39m354 │   │   │   [96mself[39m.epoch_loop.run([96mself[39m._data_fetcher)                               [31m│
+[31m│[39m   355 │                                                                                 [31m│
+[31m│[39m   356 │   [94mdef[39m [92mon_advance_end[39m([96mself[39m) -> [94mNone[39m:                                             [31m│
+[31m│[39m   357 │   │   trainer = [96mself[39m.trainer                                                    [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_light [31m│
+[31m│[39m ning/loops/[1mtraining_epoch_loop.py[22m:[94m133[39m in [92mrun[39m                                            [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m   130 │   │   [96mself[39m.on_run_start(data_fetcher)                                           [31m│
+[31m│[39m   131 │   │   [94mwhile[39m [95mnot[39m [96mself[39m.done:                                                      [31m│
+[31m│[39m   132 │   │   │   [94mtry[39m:                                                                  [31m│
+[31m│[39m [31m❱ [39m133 │   │   │   │   [96mself[39m.advance(data_fetcher)                                        [31m│
+[31m│[39m   134 │   │   │   │   [96mself[39m.on_advance_end()                                             [31m│
+[31m│[39m   135 │   │   │   │   [96mself[39m._restarting = [94mFalse[39m                                          [31m│
+[31m│[39m   136 │   │   │   [94mexcept[39m [96mStopIteration[39m:                                                 [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_light [31m│
+[31m│[39m ning/loops/[1mtraining_epoch_loop.py[22m:[94m189[39m in [92madvance[39m                                        [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m   186 │   │   [96mself[39m.val_loop.restarting = [94mFalse[39m                                          [31m│
+[31m│[39m   187 │   │                                                                             [31m│
+[31m│[39m   188 │   │   batch_idx = data_fetcher.fetched [94mif[39m [96misinstance[39m(data_fetcher, _DataLoaderI [31m│
+[31m│[39m [31m❱ [39m189 │   │   batch = [96mnext[39m(data_fetcher)                                                [31m│
+[31m│[39m   190 │   │   [96mself[39m.batch_progress.is_last_batch = data_fetcher.done                     [31m│
+[31m│[39m   191 │   │                                                                             [31m│
+[31m│[39m   192 │   │   trainer = [96mself[39m.trainer                                                    [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_light [31m│
+[31m│[39m ning/loops/[1mfetchers.py[22m:[94m136[39m in [92m__next__[39m                                                  [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m   133 │   │   [94melif[39m [95mnot[39m [96mself[39m.done:                                                       [31m│
+[31m│[39m   134 │   │   │   # this will run only when no pre-fetching was done.                   [31m│
+[31m│[39m   135 │   │   │   [94mtry[39m:                                                                  [31m│
+[31m│[39m [31m❱ [39m136 │   │   │   │   [96mself[39m._fetch_next_batch([96mself[39m.dataloader_iter)                      [31m│
+[31m│[39m   137 │   │   │   │   # consume the batch we just fetched                               [31m│
+[31m│[39m   138 │   │   │   │   batch = [96mself[39m.batches.pop([94m0[39m)                                       [31m│
+[31m│[39m   139 │   │   │   [94mexcept[39m [96mStopIteration[39m [94mas[39m ex:                                           [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_light [31m│
+[31m│[39m ning/loops/[1mfetchers.py[22m:[94m150[39m in [92m_fetch_next_batch[39m                                         [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m   147 │   [94mdef[39m [92m_fetch_next_batch[39m([96mself[39m, iterator: Iterator) -> [94mNone[39m:                      [31m│
+[31m│[39m   148 │   │   [96mself[39m._start_profiler()                                                    [31m│
+[31m│[39m   149 │   │   [94mtry[39m:                                                                      [31m│
+[31m│[39m [31m❱ [39m150 │   │   │   batch = [96mnext[39m(iterator)                                                [31m│
+[31m│[39m   151 │   │   [94mfinally[39m:                                                                  [31m│
+[31m│[39m   152 │   │   │   [96mself[39m._stop_profiler()                                                 [31m│
+[31m│[39m   153 │   │   [96mself[39m.fetched += [94m1[39m                                                         [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_light [31m│
+[31m│[39m ning/utilities/[1mcombined_loader.py[22m:[94m284[39m in [92m__next__[39m                                       [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m   281 │                                                                                 [31m│
+[31m│[39m   282 │   [94mdef[39m [92m__next__[39m([96mself[39m) -> Any:                                                    [31m│
+[31m│[39m   283 │   │   [94massert[39m [96mself[39m._iterator [95mis[39m [95mnot[39m [94mNone[39m                                         [31m│
+[31m│[39m [31m❱ [39m284 │   │   out = [96mnext[39m([96mself[39m._iterator)                                                [31m│
+[31m│[39m   285 │   │   [94mif[39m [96misinstance[39m([96mself[39m._iterator, _Sequential):                               [31m│
+[31m│[39m   286 │   │   │   [94mreturn[39m out                                                            [31m│
+[31m│[39m   287 │   │   [94mreturn[39m tree_unflatten(out, [96mself[39m._spec)                                    [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_light [31m│
+[31m│[39m ning/utilities/[1mcombined_loader.py[22m:[94m65[39m in [92m__next__[39m                                        [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m    62 │   │   out = [[94mNone[39m] * n  # values per iterator                                   [31m│
+[31m│[39m    63 │   │   [94mfor[39m i [95min[39m [96mrange[39m(n):                                                        [31m│
+[31m│[39m    64 │   │   │   [94mtry[39m:                                                                  [31m│
+[31m│[39m [31m❱ [39m 65 │   │   │   │   out[i] = [96mnext[39m([96mself[39m.iterators[i])                                  [31m│
+[31m│[39m    66 │   │   │   [94mexcept[39m [96mStopIteration[39m:                                                 [31m│
+[31m│[39m    67 │   │   │   │   [96mself[39m._consumed[i] = [94mTrue[39m                                          [31m│
+[31m│[39m    68 │   │   │   │   [94mif[39m [96mall[39m([96mself[39m._consumed):                                           [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m /home/andrea/.local/lib/python3.10/site-packages/torch/utils/data/[1mdataloader.py[22m:[94m634[39m in  [31m│
+[31m│[39m [92m__next__[39m                                                                                [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m    631 │   │   │   [94mif[39m [96mself[39m._sampler_iter [95mis[39m [94mNone[39m:                                       [31m│
+[31m│[39m    632 │   │   │   │   # TODO(https://github.com/pytorch/pytorch/issues/76750)          [31m│
+[31m│[39m    633 │   │   │   │   [96mself[39m._reset()  # type: ignore[call-arg]                          [31m│
+[31m│[39m [31m❱ [39m 634 │   │   │   data = [96mself[39m._next_data()                                             [31m│
+[31m│[39m    635 │   │   │   [96mself[39m._num_yielded += [94m1[39m                                               [31m│
+[31m│[39m    636 │   │   │   [94mif[39m [96mself[39m._dataset_kind == _DatasetKind.Iterable [95mand[39m \                 [31m│
+[31m│[39m    637 │   │   │   │   │   [96mself[39m._IterableDataset_len_called [95mis[39m [95mnot[39m [94mNone[39m [95mand[39m \           [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m /home/andrea/.local/lib/python3.10/site-packages/torch/utils/data/[1mdataloader.py[22m:[94m678[39m in  [31m│
+[31m│[39m [92m_next_data[39m                                                                              [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m    675 │                                                                                [31m│
+[31m│[39m    676 │   [94mdef[39m [92m_next_data[39m([96mself[39m):                                                        [31m│
+[31m│[39m    677 │   │   index = [96mself[39m._next_index()  # may raise StopIteration                    [31m│
+[31m│[39m [31m❱ [39m 678 │   │   data = [96mself[39m._dataset_fetcher.fetch(index)  # may raise StopIteration     [31m│
+[31m│[39m    679 │   │   [94mif[39m [96mself[39m._pin_memory:                                                     [31m│
+[31m│[39m    680 │   │   │   data = _utils.pin_memory.pin_memory(data, [96mself[39m._pin_memory_device)   [31m│
+[31m│[39m    681 │   │   [94mreturn[39m data                                                              [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m /home/andrea/.local/lib/python3.10/site-packages/torch/utils/data/_utils/[1mfetch.py[22m:[94m42[39m in [31m│
+[31m│[39m [92mfetch[39m                                                                                   [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m   39 │   │   │   │   [94mraise[39m [96mStopIteration[39m                                                [31m│
+[31m│[39m   40 │   │   [94melse[39m:                                                                      [31m│
+[31m│[39m   41 │   │   │   data = [96mnext[39m([96mself[39m.dataset_iter)                                         [31m│
+[31m│[39m [31m❱ [39m42 │   │   [94mreturn[39m [96mself[39m.collate_fn(data)                                               [31m│
+[31m│[39m   43                                                                                    [31m│
+[31m│[39m   44                                                                                    [31m│
+[31m│[39m   45 [94mclass[39m [4m_MapDatasetFetcher[24m(_BaseDatasetFetcher):                                     [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m /home/andrea/Documenti/Computer Science/Natural Language                                [31m│
+[31m│[39m Procesing/nlp2023-hw2/hw2/stud/[1mutils.py[22m:[94m26[39m in [92mcollate_fn[39m                                [31m│
+[31m│[39m                                                                                         [31m│
+[31m│[39m   23 │   │   encoded_candidates[el, :batch[el].encoded_candidates.shape[[94m1[39m], :] = batch[ [31m│
+[31m│[39m   24 │   │   encoded_candidates_attention_mask[el, :batch[el].encoded_candidates.shape[ [31m│
+[31m│[39m   25 │   [94mif[39m [96mlen[39m(batch) != [94m8[39m:                                                            [31m│
+[31m│[39m [31m❱ [39m26 │   │   [94mraise[39m [96mException[39m                                                            [31m│
+[31m│[39m   27 │   [94mreturn[39m encoded_sequence, encoded_sequence_attention_mask, encoded_sequence_out [31m│
+[31m╰─────────────────────────────────────────────────────────────────────────────────────────╯
+[1mException

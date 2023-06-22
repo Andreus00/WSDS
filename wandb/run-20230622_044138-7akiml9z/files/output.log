@@ -1,0 +1,275 @@
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loggers/wandb.py:396: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+You are using a CUDA device ('NVIDIA GeForce RTX 3090') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name            | Type             | Params
+-----------------------------------------------------
+0 | gloss_encoder   | GlossEncoder     | 108 M
+1 | context_encoder | ContextEncoder   | 108 M
+2 | loss            | CrossEntropyLoss | 0
+3 | cc              | CosineSimilarity | 0
+-----------------------------------------------------
+216 M     Trainable params
+0         Non-trainable params
+216 M     Total params
+866.482   Total estimated model params size (MB)
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:432: PossibleUserWarning: The dataloader, val_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 20 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/utilities/data.py:120: UserWarning: Your `IterableDataset` has `__len__` defined. In combination with multi-process data loading (when num_workers > 1), `__len__` could be inaccurate if each worker is not configured independently to avoid having duplicate data.
+  rank_zero_warn(
+Sanity Checking DataLoader 0:  50%|█████████████████████████████████████████████████████████████████████████████████████████████████████                                                                                                     | 1/2 [00:01<00:01,  1.01s/it]
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/utilities/data.py:76: UserWarning: Trying to infer the `batch_size` from an ambiguous collection. The batch size we found is 8. To avoid any miscalculations, use `self.log(..., batch_size=batch_size)`.
+  warning_cache.warn(
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:432: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 20 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/core/module.py:707: UserWarning: `training_step` must be implemented to be used with the Lightning Trainer
+  rank_zero_warn("`training_step` must be implemented to be used with the Lightning Trainer")
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loops/optimization/automatic.py:129: UserWarning: `training_step` returned `None`. If this was on purpose, ignore this warning...
+
+
+Epoch 0: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2494/2494 [00:04<00:00, 613.32it/s, v_num=ml9z]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Validation DataLoader 0:  97%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏     | 135/139 [01:51<00:03,  1.21it/s]
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/utilities/data.py:76: UserWarning: Trying to infer the `batch_size` from an ambiguous collection. The batch size we found is 2. To avoid any miscalculations, use `self.log(..., batch_size=batch_size)`.
+  warning_cache.warn(
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:212: UserWarning: You called `self.log('train_loss_epoch', ...)` in your `on_train_epoch_end` but the value needs to be floating point. Converting it to torch.float32.
+  warning_cache.warn(
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1318: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Traceback (most recent call last):
+  File "/home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/train_model.py", line 4, in <module>
+    train()
+  File "/home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/hw2/stud/train.py", line 107, in train
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 531, in fit
+    call._call_and_handle_interrupt(
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 42, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 570, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 975, in _run
+    results = self._run_stage()
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1018, in _run_stage
+    self.fit_loop.run()
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loops/fit_loop.py", line 202, in run
+    self.on_advance_end()
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loops/fit_loop.py", line 369, in on_advance_end
+    call._call_callback_hooks(trainer, "on_train_epoch_end", monitoring_callbacks=True)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 189, in _call_callback_hooks
+    fn(trainer, trainer.lightning_module, *args, **kwargs)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/callbacks/early_stopping.py", line 180, in on_train_epoch_end
+    self._run_early_stopping_check(trainer)
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/callbacks/early_stopping.py", line 191, in _run_early_stopping_check
+    if trainer.fast_dev_run or not self._validate_condition_metric(  # disable early_stopping with fast_dev_run
+  File "/home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/callbacks/early_stopping.py", line 146, in _validate_condition_metric
+    raise RuntimeError(error_msg)
+RuntimeError: Early stopping conditioned on metric `val_loss` which is not available. Pass in or modify your `EarlyStopping` callback to use any of the following: `val_loss_batch`, `val_loss_batch_epoch`, `val_loss_epoch`, `val_acc_epoch`, `val_prec_epoch`, `val_recall_epoch`, `val_f1_epoch`, `train_loss_epoch`, `train_acc_epoch`, `train_prec_epoch`, `train_recall_epoch`, `train_f1_epoch`
+[31m╭─────────────────────────────── [39m[1mTraceback (most recent call last)[31m[22m ────────────────────────────────╮
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/[1mtrain_model.py[22m:[94m4[39m  [31m│
+[31m│[39m in [92m<module>[39m                                                                                      [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   1 [94mfrom[39m [4mhw2.stud.train[24m [94mimport[39m train                                                             [31m│
+[31m│[39m   2                                                                                              [31m│
+[31m│[39m   3 [94mif[39m [91m__name__[39m == [33m'__main__'[39m:                                                                   [31m│
+[31m│[39m [31m❱ [39m4 │   train()                                                                                  [31m│
+[31m│[39m /home/andrea/Documenti/Computer Science/Natural Language                                         [31m│
+[31m│[39m Procesing/nlp2023-hw2/hw2/stud/[1mtrain.py[22m:[94m107[39m in [92mtrain[39m                                             [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   104 │   )                                                                                      [31m│
+[31m│[39m   105 │                                                                                          [31m│
+[31m│[39m   106 │   # train                                                                                [31m│
+[31m│[39m [31m❱ [39m107 │                                                                                          [31m│
+[31m│[39m   108 │   trainer = pl.Trainer(accelerator=[33m"cuda"[39m,                                               [31m│
+[31m│[39m   109 │   │   │   │   │   │    devices=[94m1[39m,                                                        [31m│
+[31m│[39m   110 │   │   │   │   │   │    max_epochs=config.epochs,                                         [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trai [31m│
+[31m│[39m ner/[1mtrainer.py[22m:[94m531[39m in [92mfit[39m                                                                        [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m    528 │   │   [33m"""[39m                                                                               [31m│
+[31m│[39m    529 │   │   model = _maybe_unwrap_optimized(model)                                            [31m│
+[31m│[39m    530 │   │   [96mself[39m.strategy._lightning_module = model                                           [31m│
+[31m│[39m [31m❱ [39m 531 │   │   call._call_and_handle_interrupt(                                                  [31m│
+[31m│[39m    532 │   │   │   [96mself[39m, [96mself[39m._fit_impl, model, train_dataloaders, val_dataloaders, datamodule,  [31m│
+[31m│[39m    533 │   │   )                                                                                 [31m│
+[31m│[39m    534                                                                                           [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trai [31m│
+[31m│[39m ner/[1mcall.py[22m:[94m42[39m in [92m_call_and_handle_interrupt[39m                                                     [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m    39 │   [94mtry[39m:                                                                                   [31m│
+[31m│[39m    40 │   │   [94mif[39m trainer.strategy.launcher [95mis[39m [95mnot[39m [94mNone[39m:                                          [31m│
+[31m│[39m    41 │   │   │   [94mreturn[39m trainer.strategy.launcher.launch(trainer_fn, *args, trainer=trainer,    [31m│
+[31m│[39m [31m❱ [39m 42 │   │   [94mreturn[39m trainer_fn(*args, **kwargs)                                                 [31m│
+[31m│[39m    43 │                                                                                          [31m│
+[31m│[39m    44 │   [94mexcept[39m _TunerExitException:                                                            [31m│
+[31m│[39m    45 │   │   _call_teardown_hook(trainer)                                                       [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trai [31m│
+[31m│[39m ner/[1mtrainer.py[22m:[94m570[39m in [92m_fit_impl[39m                                                                  [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m    567 │   │   │   model_provided=[94mTrue[39m,                                                          [31m│
+[31m│[39m    568 │   │   │   model_connected=[96mself[39m.lightning_module [95mis[39m [95mnot[39m [94mNone[39m,                            [31m│
+[31m│[39m    569 │   │   )                                                                                 [31m│
+[31m│[39m [31m❱ [39m 570 │   │   [96mself[39m._run(model, ckpt_path=ckpt_path)                                             [31m│
+[31m│[39m    571 │   │                                                                                     [31m│
+[31m│[39m    572 │   │   [94massert[39m [96mself[39m.state.stopped                                                         [31m│
+[31m│[39m    573 │   │   [96mself[39m.training = [94mFalse[39m                                                             [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trai [31m│
+[31m│[39m ner/[1mtrainer.py[22m:[94m975[39m in [92m_run[39m                                                                       [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m    972 │   │   # ----------------------------                                                    [31m│
+[31m│[39m    973 │   │   # RUN THE TRAINER                                                                 [31m│
+[31m│[39m    974 │   │   # ----------------------------                                                    [31m│
+[31m│[39m [31m❱ [39m 975 │   │   results = [96mself[39m._run_stage()                                                       [31m│
+[31m│[39m    976 │   │                                                                                     [31m│
+[31m│[39m    977 │   │   # ----------------------------                                                    [31m│
+[31m│[39m    978 │   │   # POST-Training CLEAN UP                                                          [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trai [31m│
+[31m│[39m ner/[1mtrainer.py[22m:[94m1018[39m in [92m_run_stage[39m                                                                [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   1015 │   │   │   [94mwith[39m isolate_rng():                                                           [31m│
+[31m│[39m   1016 │   │   │   │   [96mself[39m._run_sanity_check()                                                  [31m│
+[31m│[39m   1017 │   │   │   [94mwith[39m torch.autograd.set_detect_anomaly([96mself[39m._detect_anomaly):                 [31m│
+[31m│[39m [31m❱ [39m1018 │   │   │   │   [96mself[39m.fit_loop.run()                                                       [31m│
+[31m│[39m   1019 │   │   │   [94mreturn[39m [94mNone[39m                                                                   [31m│
+[31m│[39m   1020 │   │   [94mraise[39m [96mRuntimeError[39m([33mf"Unexpected state {[96mself[39m.state[33m}"[39m)                              [31m│
+[31m│[39m   1021                                                                                           [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loop [31m│
+[31m│[39m s/[1mfit_loop.py[22m:[94m202[39m in [92mrun[39m                                                                         [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   199 │   │   │   [94mtry[39m:                                                                           [31m│
+[31m│[39m   200 │   │   │   │   [96mself[39m.on_advance_start()                                                    [31m│
+[31m│[39m   201 │   │   │   │   [96mself[39m.advance()                                                             [31m│
+[31m│[39m [31m❱ [39m202 │   │   │   │   [96mself[39m.on_advance_end()                                                      [31m│
+[31m│[39m   203 │   │   │   │   [96mself[39m._restarting = [94mFalse[39m                                                   [31m│
+[31m│[39m   204 │   │   │   [94mexcept[39m [96mStopIteration[39m:                                                          [31m│
+[31m│[39m   205 │   │   │   │   [94mbreak[39m                                                                      [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/loop [31m│
+[31m│[39m s/[1mfit_loop.py[22m:[94m369[39m in [92mon_advance_end[39m                                                              [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   366 │   │   # `LightningModule.on_train_epoch_end`                                             [31m│
+[31m│[39m   367 │   │   call._call_callback_hooks(trainer, [33m"on_train_epoch_end"[39m, monitoring_callbacks=[94mFa[39m   [31m│
+[31m│[39m   368 │   │   call._call_lightning_module_hook(trainer, [33m"on_train_epoch_end"[39m)                    [31m│
+[31m│[39m [31m❱ [39m369 │   │   call._call_callback_hooks(trainer, [33m"on_train_epoch_end"[39m, monitoring_callbacks=[94mTr[39m   [31m│
+[31m│[39m   370 │   │                                                                                      [31m│
+[31m│[39m   371 │   │   trainer._logger_connector.on_epoch_end()                                           [31m│
+[31m│[39m   372                                                                                            [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/trai [31m│
+[31m│[39m ner/[1mcall.py[22m:[94m189[39m in [92m_call_callback_hooks[39m                                                          [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   186 │   │   fn = [96mgetattr[39m(callback, hook_name)                                                  [31m│
+[31m│[39m   187 │   │   [94mif[39m callable(fn):                                                                   [31m│
+[31m│[39m   188 │   │   │   [94mwith[39m trainer.profiler.profile([33mf"[Callback]{[39mcallback.state_key[33m}.{[39mhook_name[33m}"[39m)   [31m│
+[31m│[39m [31m❱ [39m189 │   │   │   │   fn(trainer, trainer.lightning_module, *args, **kwargs)                     [31m│
+[31m│[39m   190 │                                                                                          [31m│
+[31m│[39m   191 │   [94mif[39m pl_module:                                                                          [31m│
+[31m│[39m   192 │   │   # restore current_fx when nested context                                           [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/call [31m│
+[31m│[39m backs/[1mearly_stopping.py[22m:[94m180[39m in [92mon_train_epoch_end[39m                                                [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   177 │   [94mdef[39m [92mon_train_epoch_end[39m([96mself[39m, trainer: [33m"pl.Trainer"[39m, pl_module: [33m"pl.LightningModule"[39m)   [31m│
+[31m│[39m   178 │   │   [94mif[39m [95mnot[39m [96mself[39m._check_on_train_epoch_end [95mor[39m [96mself[39m._should_skip_check(trainer):         [31m│
+[31m│[39m   179 │   │   │   [94mreturn[39m                                                                         [31m│
+[31m│[39m [31m❱ [39m180 │   │   [96mself[39m._run_early_stopping_check(trainer)                                            [31m│
+[31m│[39m   181 │                                                                                          [31m│
+[31m│[39m   182 │   [94mdef[39m [92mon_validation_end[39m([96mself[39m, trainer: [33m"pl.Trainer"[39m, pl_module: [33m"pl.LightningModule"[39m)    [31m│
+[31m│[39m   183 │   │   [94mif[39m [96mself[39m._check_on_train_epoch_end [95mor[39m [96mself[39m._should_skip_check(trainer):             [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/call [31m│
+[31m│[39m backs/[1mearly_stopping.py[22m:[94m191[39m in [92m_run_early_stopping_check[39m                                         [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   188 │   │   [33m"""Checks whether the early stopping condition is met and if so tells the traine[39m   [31m│
+[31m│[39m   189 │   │   logs = trainer.callback_metrics                                                    [31m│
+[31m│[39m   190 │   │                                                                                      [31m│
+[31m│[39m [31m❱ [39m191 │   │   [94mif[39m trainer.fast_dev_run [95mor[39m [95mnot[39m [96mself[39m._validate_condition_metric(  # disable early   [31m│
+[31m│[39m   192 │   │   │   logs                                                                           [31m│
+[31m│[39m   193 │   │   ):  # short circuit if metric not present                                          [31m│
+[31m│[39m   194 │   │   │   [94mreturn[39m                                                                         [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m /home/andrea/miniconda3/envs/cla-transformer/lib/python3.10/site-packages/pytorch_lightning/call [31m│
+[31m│[39m backs/[1mearly_stopping.py[22m:[94m146[39m in [92m_validate_condition_metric[39m                                        [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   143 │   │                                                                                      [31m│
+[31m│[39m   144 │   │   [94mif[39m monitor_val [95mis[39m [94mNone[39m:                                                            [31m│
+[31m│[39m   145 │   │   │   [94mif[39m [96mself[39m.strict:                                                                [31m│
+[31m│[39m [31m❱ [39m146 │   │   │   │   [94mraise[39m [96mRuntimeError[39m(error_msg)                                              [31m│
+[31m│[39m   147 │   │   │   [94mif[39m [96mself[39m.verbose > [94m0[39m:                                                           [31m│
+[31m│[39m   148 │   │   │   │   rank_zero_warn(error_msg, category=[96mRuntimeWarning[39m)                         [31m│
+[31m│[39m   149                                                                                            [31m│
+[31m╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+[1mRuntimeError: [22mEarly stopping conditioned on metric `val_loss` which is not available. Pass in or modify your `EarlyStopping` callback to use any of the following: `val_loss_batch`, `val_loss_batch_epoch`, `val_loss_epoch`, `val_acc_epoch`, `val_prec_epoch`,
+`val_recall_epoch`, `val_f1_epoch`, `train_loss_epoch`, `train_acc_epoch`, `train_prec_epoch`, `train_recall_epoch`, `train_f1_epoch`

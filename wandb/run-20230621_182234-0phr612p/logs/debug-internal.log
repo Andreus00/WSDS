@@ -1,0 +1,920 @@
+2023-06-21 18:22:34,962 INFO    StreamThr :219238 [internal.py:wandb_internal():86] W&B internal server running at pid: 219238, started at: 2023-06-21 18:22:34.962093
+2023-06-21 18:22:34,962 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: status
+2023-06-21 18:22:34,963 INFO    WriterThread:219238 [datastore.py:open_for_write():85] open: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/run-0phr612p.wandb
+2023-06-21 18:22:34,964 DEBUG   SenderThread:219238 [sender.py:send():375] send: header
+2023-06-21 18:22:34,964 DEBUG   SenderThread:219238 [sender.py:send():375] send: run
+2023-06-21 18:22:35,389 INFO    SenderThread:219238 [dir_watcher.py:__init__():219] watching files in: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files
+2023-06-21 18:22:35,389 INFO    SenderThread:219238 [sender.py:_start_run_threads():1124] run started: 0phr612p with start time 1687364554.962163
+2023-06-21 18:22:35,389 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:22:35,390 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:22:35,391 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: check_version
+2023-06-21 18:22:35,391 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: check_version
+2023-06-21 18:22:35,496 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: run_start
+2023-06-21 18:22:35,500 DEBUG   HandlerThread:219238 [system_info.py:__init__():31] System info init
+2023-06-21 18:22:35,500 DEBUG   HandlerThread:219238 [system_info.py:__init__():46] System info init done
+2023-06-21 18:22:35,500 INFO    HandlerThread:219238 [system_monitor.py:start():181] Starting system monitor
+2023-06-21 18:22:35,500 INFO    SystemMonitor:219238 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-21 18:22:35,500 INFO    HandlerThread:219238 [system_monitor.py:probe():201] Collecting system info
+2023-06-21 18:22:35,500 INFO    SystemMonitor:219238 [interfaces.py:start():190] Started cpu monitoring
+2023-06-21 18:22:35,501 INFO    SystemMonitor:219238 [interfaces.py:start():190] Started disk monitoring
+2023-06-21 18:22:35,501 INFO    SystemMonitor:219238 [interfaces.py:start():190] Started gpu monitoring
+2023-06-21 18:22:35,501 INFO    SystemMonitor:219238 [interfaces.py:start():190] Started memory monitoring
+2023-06-21 18:22:35,502 INFO    SystemMonitor:219238 [interfaces.py:start():190] Started network monitoring
+2023-06-21 18:22:35,524 DEBUG   HandlerThread:219238 [system_info.py:probe():195] Probing system
+2023-06-21 18:22:35,525 DEBUG   HandlerThread:219238 [system_info.py:_probe_git():180] Probing git
+2023-06-21 18:22:35,527 DEBUG   HandlerThread:219238 [system_info.py:_probe_git():188] Probing git done
+2023-06-21 18:22:35,527 DEBUG   HandlerThread:219238 [system_info.py:probe():240] Probing system done
+2023-06-21 18:22:35,527 DEBUG   HandlerThread:219238 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-75-generic-x86_64-with-glibc2.35', 'python': '3.10.10', 'heartbeatAt': '2023-06-21T16:22:35.524223', 'startedAt': '2023-06-21T16:22:34.957164', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/andrea/Documents/Computer Science/Natural Language Procesing/nlp2023-hw2/train_model.py', 'git': {'remote': 'https://github.com/SapienzaNLP/nlp2023-hw2.git', 'commit': 'e09072800dbc48addb060d7e09ea96728343636f'}, 'email': 'sanchietti.1883210@studenti.uniroma1.it', 'root': '/home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2', 'host': 'andrea-Pc', 'username': 'andrea', 'executable': '/home/andrea/miniconda3/envs/cla-transformer/bin/python', 'cpu_count': 12, 'cpu_count_logical': 20, 'cpu_freq': {'current': 2221.9483, 'min': 800.0, 'max': 4580.0}, 'cpu_freq_per_core': [{'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4900.0}, {'current': 2100.0, 'min': 800.0, 'max': 4900.0}, {'current': 4538.966, 'min': 800.0, 'max': 4900.0}, {'current': 2100.0, 'min': 800.0, 'max': 4900.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 3600.0}, {'current': 2100.0, 'min': 800.0, 'max': 3600.0}, {'current': 2100.0, 'min': 800.0, 'max': 3600.0}, {'current': 2100.0, 'min': 800.0, 'max': 3600.0}], 'disk': {'total': 250.59968948364258, 'used': 181.12840270996094}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 31.15399169921875}}
+2023-06-21 18:22:35,527 INFO    HandlerThread:219238 [system_monitor.py:probe():211] Finished collecting system info
+2023-06-21 18:22:35,527 INFO    HandlerThread:219238 [system_monitor.py:probe():214] Publishing system info
+2023-06-21 18:22:35,527 DEBUG   HandlerThread:219238 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-06-21 18:22:35,528 DEBUG   HandlerThread:219238 [system_info.py:_save_pip():67] Saving pip packages done
+2023-06-21 18:22:35,528 DEBUG   HandlerThread:219238 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-06-21 18:22:36,304 DEBUG   HandlerThread:219238 [system_info.py:_save_conda():86] Saving conda packages done
+2023-06-21 18:22:36,305 INFO    HandlerThread:219238 [system_monitor.py:probe():216] Finished publishing system info
+2023-06-21 18:22:36,306 DEBUG   SenderThread:219238 [sender.py:send():375] send: files
+2023-06-21 18:22:36,306 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-06-21 18:22:36,309 DEBUG   SenderThread:219238 [sender.py:send():375] send: telemetry
+2023-06-21 18:22:36,309 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-21 18:22:36,309 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: stop_status
+2023-06-21 18:22:36,391 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_created():278] file/dir created: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/conda-environment.yaml
+2023-06-21 18:22:36,391 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_created():278] file/dir created: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-metadata.json
+2023-06-21 18:22:36,391 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_created():278] file/dir created: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:22:36,391 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_created():278] file/dir created: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/requirements.txt
+2023-06-21 18:22:36,839 INFO    wandb-upload_0:219238 [upload_job.py:push():137] Uploaded file /tmp/tmpcdf54lzbwandb/8wd08tiu-wandb-metadata.json
+2023-06-21 18:22:37,390 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_created():278] file/dir created: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:22:39,392 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:22:39,965 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: status_report
+2023-06-21 18:22:41,412 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:22:43,505 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:22:44,105 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:22:44,105 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:22:44,105 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:22:44,106 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:22:44,499 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:22:44,992 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:22:44,992 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: status_report
+2023-06-21 18:22:44,993 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:22:44,993 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:22:44,993 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:22:45,499 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:22:45,500 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:22:45,706 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:22:45,707 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:22:45,707 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:22:45,707 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:22:46,500 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:22:46,540 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:22:46,542 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:22:46,542 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:22:46,542 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:22:47,377 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:22:47,377 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:22:47,377 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:22:47,378 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:22:47,500 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:22:47,500 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:22:48,035 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:22:48,036 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:22:48,036 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:22:48,036 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:22:48,500 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:22:49,034 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:22:49,035 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:22:49,035 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:22:49,035 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:22:49,417 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:22:49,417 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:22:49,417 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:22:49,418 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:22:49,500 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:22:49,500 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:22:50,076 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:22:50,077 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: status_report
+2023-06-21 18:22:50,077 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:22:50,077 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:22:50,077 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:22:50,459 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:22:50,460 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:22:50,460 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:22:50,460 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:22:50,500 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:22:50,964 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:22:50,965 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:22:50,965 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:22:50,965 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:22:51,308 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-21 18:22:51,309 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: stop_status
+2023-06-21 18:22:51,501 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:22:51,501 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:22:51,967 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:22:51,967 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:22:51,967 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:22:51,967 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:22:52,501 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:22:52,808 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:22:52,808 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:22:52,809 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:22:52,809 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:22:53,361 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:22:53,361 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:22:53,361 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:22:53,361 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:22:53,501 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:22:53,501 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:22:54,022 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:22:54,022 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:22:54,022 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:22:54,022 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:22:54,501 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:22:54,575 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:22:54,575 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:22:54,576 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:22:54,576 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:22:55,024 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:22:55,024 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:22:55,024 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:22:55,024 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:22:55,409 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:22:55,409 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: status_report
+2023-06-21 18:22:55,409 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:22:55,409 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:22:55,409 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:22:55,502 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:22:55,502 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:22:56,025 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:22:56,025 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:22:56,025 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:22:56,025 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:22:56,502 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:22:57,254 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:22:57,254 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:22:57,254 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:22:57,254 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:22:57,502 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:22:57,502 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:22:58,749 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:22:58,749 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:22:58,750 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:22:58,750 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:22:59,502 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:22:59,502 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:22:59,744 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:22:59,744 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:22:59,744 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:22:59,745 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:00,458 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: status_report
+2023-06-21 18:23:00,458 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:00,459 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:00,459 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:00,459 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:00,503 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:01,069 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:01,069 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:01,069 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:01,070 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:01,503 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:01,503 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:02,064 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:02,064 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:02,065 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:02,065 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:02,503 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:02,675 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:02,675 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:02,676 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:02,676 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:03,503 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:03,503 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:03,672 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:03,673 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:03,673 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:03,673 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:04,053 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:04,053 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:04,053 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:04,054 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:04,323 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:04,323 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:04,323 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:04,324 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:04,503 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:04,825 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:04,826 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:04,826 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:04,826 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:05,504 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:05,504 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:05,824 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:05,824 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: status_report
+2023-06-21 18:23:06,018 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:06,018 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:06,019 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:06,308 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-21 18:23:06,309 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: stop_status
+2023-06-21 18:23:06,504 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/config.yaml
+2023-06-21 18:23:06,504 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:07,310 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:07,311 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:07,311 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:07,311 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:07,504 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:07,504 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:07,814 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:07,815 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:07,815 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:07,815 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:08,504 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:08,811 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:08,812 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:08,812 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:08,812 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:09,361 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:09,362 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:09,362 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:09,362 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:09,505 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:09,505 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:09,974 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:09,974 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:09,974 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:09,975 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:10,505 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:10,866 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:10,867 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:10,867 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:10,867 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:11,313 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: status_report
+2023-06-21 18:23:11,313 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:11,313 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:11,313 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:11,314 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:11,505 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:11,505 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:12,096 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:12,097 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:12,097 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:12,097 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:12,505 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:12,815 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:12,815 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:12,815 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:12,815 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:13,505 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:13,505 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:13,653 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:13,653 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:13,654 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:13,654 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:14,506 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:15,146 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:15,146 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:15,146 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:15,146 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:15,506 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:15,506 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:15,697 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:15,697 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:15,697 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:15,697 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:16,078 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:16,078 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:16,079 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:16,079 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:16,506 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:17,079 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: status_report
+2023-06-21 18:23:17,302 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:17,302 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:17,303 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:17,303 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:17,506 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:17,506 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:18,475 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:18,476 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:18,476 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:18,476 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:18,506 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:19,507 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:19,977 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:19,977 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:19,977 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:19,977 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:20,507 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:20,638 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:20,638 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:20,639 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:20,639 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:21,309 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-21 18:23:21,309 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: stop_status
+2023-06-21 18:23:21,507 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:21,507 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:21,677 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:21,678 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:21,678 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:21,678 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:22,507 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:22,678 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: status_report
+2023-06-21 18:23:22,901 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:22,902 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:22,902 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:22,902 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:23,507 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:23,508 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:23,515 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:23,516 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:23,516 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:23,516 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:24,072 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:24,072 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:24,072 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:24,072 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:24,508 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:24,860 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:24,861 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:24,861 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:24,861 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:25,132 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:25,132 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:25,133 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:25,133 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:25,508 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:25,508 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:26,134 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:26,134 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:26,134 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:26,135 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:26,508 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:27,137 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:27,137 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:27,137 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:27,137 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:27,508 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:27,508 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:27,798 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: status_report
+2023-06-21 18:23:27,799 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:27,799 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:27,799 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:27,799 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:28,133 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:28,133 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:28,133 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:28,134 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:28,509 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:29,357 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:29,358 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:29,358 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:29,358 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:29,509 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:29,509 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:30,079 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:30,080 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:30,080 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:30,080 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:30,509 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:30,921 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:30,922 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:30,922 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:30,922 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:31,370 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:31,370 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:31,370 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:31,370 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:31,509 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:31,509 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:31,877 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:31,877 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:31,877 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:31,877 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:32,492 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:32,493 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:32,493 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:32,493 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:32,509 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:33,493 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: status_report
+2023-06-21 18:23:33,496 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:33,496 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:33,496 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:33,497 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:33,510 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:33,510 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:34,049 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:34,049 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:34,049 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:34,049 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:34,510 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:34,713 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:34,715 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:34,715 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:34,715 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:35,433 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:35,433 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:35,434 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:35,434 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:35,502 DEBUG   SystemMonitor:219238 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-21 18:23:35,503 DEBUG   SenderThread:219238 [sender.py:send():375] send: stats
+2023-06-21 18:23:35,510 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:35,510 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:36,098 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:36,098 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:36,098 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:36,098 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:36,309 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-21 18:23:36,309 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: stop_status
+2023-06-21 18:23:36,510 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:36,605 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:36,606 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:36,606 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:36,606 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:36,988 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:36,988 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:36,988 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:36,988 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:37,510 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:37,511 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:37,651 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:37,652 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:37,652 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:37,652 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:38,511 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:38,652 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: status_report
+2023-06-21 18:23:39,153 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:39,153 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:39,153 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:39,154 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:39,511 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:39,511 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:39,537 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:39,538 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:39,538 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:39,538 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:39,872 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:39,873 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:39,873 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:39,873 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:40,511 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:40,715 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:40,716 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:40,716 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:40,716 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:41,511 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:41,511 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:41,720 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:41,721 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:41,721 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:41,721 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:42,383 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:42,383 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:42,384 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:42,384 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:42,511 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:42,655 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:42,655 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:42,656 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:42,656 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:43,161 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:43,164 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:43,164 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:43,164 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:43,512 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:43,512 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:43,779 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: status_report
+2023-06-21 18:23:43,779 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:43,779 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:43,779 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:43,780 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:44,287 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:44,288 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:44,288 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:44,288 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:44,512 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:44,795 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:44,795 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:44,796 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:44,796 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:45,512 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:45,512 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:46,025 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:46,025 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:46,025 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:46,026 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:46,512 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:47,031 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:47,031 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:47,031 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:47,031 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:47,513 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:47,513 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:48,533 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:48,534 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:48,534 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:48,534 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:49,041 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:49,042 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: status_report
+2023-06-21 18:23:49,042 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:49,042 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:49,042 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:49,513 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:49,513 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:50,545 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:50,545 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:50,546 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:50,546 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:51,388 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-21 18:23:51,388 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: stop_status
+2023-06-21 18:23:51,390 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:51,514 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:51,514 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:51,543 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:51,543 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:51,543 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:52,053 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:52,054 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:52,054 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:52,054 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:52,438 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:52,439 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:52,439 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:52,439 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:52,514 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:52,824 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:52,824 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:52,824 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:52,825 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:53,514 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:53,514 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:53,666 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:53,667 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:53,667 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:53,667 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:54,224 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: status_report
+2023-06-21 18:23:54,224 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:54,224 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:54,224 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:54,224 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:54,514 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:54,672 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:54,672 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:54,672 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:54,673 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:55,515 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:55,515 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:55,620 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:55,621 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:55,621 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:55,621 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:56,175 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:56,175 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:56,175 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:56,176 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:56,515 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:56,688 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:56,689 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:56,689 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:56,689 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:57,515 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:57,515 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:57,917 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:57,918 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:57,918 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:57,918 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:58,515 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:58,925 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:58,925 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:58,926 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:58,926 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:59,262 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:59,263 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: status_report
+2023-06-21 18:23:59,263 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:59,263 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:59,263 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:23:59,515 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:23:59,516 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:23:59,817 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:23:59,817 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:23:59,817 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:23:59,817 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:00,516 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:00,541 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:00,541 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:00,542 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:00,542 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:01,161 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:01,161 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:01,161 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:01,162 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:01,516 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:01,516 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:24:01,717 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:01,718 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:01,718 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:01,718 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:02,516 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:02,725 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:02,726 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:02,726 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:02,726 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:03,516 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:03,517 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:24:03,673 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:03,673 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:03,673 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:03,673 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:04,230 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:04,230 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:04,230 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:04,230 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:04,517 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:05,231 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: status_report
+2023-06-21 18:24:05,276 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:05,276 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:05,277 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:05,277 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:05,503 DEBUG   SenderThread:219238 [sender.py:send():375] send: stats
+2023-06-21 18:24:05,517 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:05,517 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:24:05,894 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:05,894 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:05,894 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:05,894 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:06,388 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-21 18:24:06,389 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: stop_status
+2023-06-21 18:24:06,517 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:06,620 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:06,620 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:06,620 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:06,621 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:06,956 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:06,956 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:06,956 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:06,956 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:07,517 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:07,517 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:24:07,621 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:07,622 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:07,622 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:07,622 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:08,346 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:08,347 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:08,347 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:08,347 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:08,518 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:09,355 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:09,355 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:09,355 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:09,355 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:09,518 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:09,518 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:24:10,146 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:10,147 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:10,147 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:10,147 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:10,518 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:11,147 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: status_report
+2023-06-21 18:24:11,157 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:11,157 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:11,157 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:11,157 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:11,518 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:11,518 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:24:12,663 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:12,664 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:12,664 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:12,664 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:13,519 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:13,519 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:24:13,713 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:13,714 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:13,714 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:13,714 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:14,519 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:14,724 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:14,724 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:14,724 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:14,725 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:15,278 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:15,279 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:15,279 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:15,279 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:15,519 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:15,519 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:24:16,008 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:16,009 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:16,009 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:16,009 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:16,519 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:17,009 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: status_report
+2023-06-21 18:24:17,516 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:17,518 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:17,518 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:17,518 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:17,523 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:17,523 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:24:18,565 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:18,566 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:18,566 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:18,566 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:19,418 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:19,419 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:19,419 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:19,419 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:19,523 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:19,524 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:24:20,432 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:20,432 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:20,432 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:20,433 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:20,524 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:21,442 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:21,443 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-21 18:24:21,443 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:21,443 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:21,443 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:21,444 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: stop_status
+2023-06-21 18:24:21,524 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:21,524 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:24:22,611 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: status_report
+2023-06-21 18:24:22,678 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:22,678 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:22,679 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:22,679 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:23,300 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:23,301 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:23,301 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:23,301 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:23,524 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:23,525 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:24:24,202 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:24,202 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:24,202 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:24,202 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:24,525 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:24,759 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:24,760 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:24,760 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:24,760 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:25,525 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:25,525 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:24:25,808 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:25,808 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:25,808 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:25,809 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:26,525 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:26,856 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:26,857 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:26,857 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:26,857 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:27,526 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:27,526 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:24:27,582 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:27,582 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:27,583 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:27,583 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:27,857 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: status_report
+2023-06-21 18:24:27,857 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:27,857 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:27,858 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:27,858 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:28,526 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:28,582 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:28,582 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:28,582 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:28,582 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:29,526 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:29,526 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:24:29,633 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:29,633 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:29,633 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:29,634 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:30,299 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-21 18:24:30,300 DEBUG   SenderThread:219238 [sender.py:send():375] send: history
+2023-06-21 18:24:30,300 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: summary_record
+2023-06-21 18:24:30,300 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:30,526 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:30,846 DEBUG   SenderThread:219238 [sender.py:send():375] send: exit
+2023-06-21 18:24:30,846 INFO    SenderThread:219238 [sender.py:send_exit():598] handling exit code: 1
+2023-06-21 18:24:30,846 INFO    SenderThread:219238 [sender.py:send_exit():600] handling runtime: 115
+2023-06-21 18:24:30,847 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:30,847 INFO    SenderThread:219238 [sender.py:send_exit():606] send defer
+2023-06-21 18:24:30,847 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: defer
+2023-06-21 18:24:30,847 INFO    HandlerThread:219238 [handler.py:handle_request_defer():170] handle defer: 0
+2023-06-21 18:24:30,847 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: defer
+2023-06-21 18:24:30,847 INFO    SenderThread:219238 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-06-21 18:24:30,847 INFO    SenderThread:219238 [sender.py:transition_state():626] send defer: 1
+2023-06-21 18:24:30,847 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: defer
+2023-06-21 18:24:30,847 INFO    HandlerThread:219238 [handler.py:handle_request_defer():170] handle defer: 1
+2023-06-21 18:24:30,847 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: defer
+2023-06-21 18:24:30,847 INFO    SenderThread:219238 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-06-21 18:24:30,847 INFO    SenderThread:219238 [sender.py:transition_state():626] send defer: 2
+2023-06-21 18:24:30,848 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: defer
+2023-06-21 18:24:30,848 INFO    HandlerThread:219238 [handler.py:handle_request_defer():170] handle defer: 2
+2023-06-21 18:24:30,848 INFO    HandlerThread:219238 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-21 18:24:30,848 DEBUG   SystemMonitor:219238 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-21 18:24:30,848 DEBUG   SystemMonitor:219238 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-21 18:24:30,848 INFO    HandlerThread:219238 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-21 18:24:30,848 INFO    HandlerThread:219238 [interfaces.py:finish():202] Joined disk monitor
+2023-06-21 18:24:30,872 INFO    HandlerThread:219238 [interfaces.py:finish():202] Joined gpu monitor
+2023-06-21 18:24:30,873 INFO    HandlerThread:219238 [interfaces.py:finish():202] Joined memory monitor
+2023-06-21 18:24:30,873 INFO    HandlerThread:219238 [interfaces.py:finish():202] Joined network monitor
+2023-06-21 18:24:30,873 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: defer
+2023-06-21 18:24:30,873 INFO    SenderThread:219238 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-06-21 18:24:30,873 INFO    SenderThread:219238 [sender.py:transition_state():626] send defer: 3
+2023-06-21 18:24:30,873 DEBUG   SenderThread:219238 [sender.py:send():375] send: stats
+2023-06-21 18:24:30,873 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: defer
+2023-06-21 18:24:30,874 INFO    HandlerThread:219238 [handler.py:handle_request_defer():170] handle defer: 3
+2023-06-21 18:24:30,874 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: defer
+2023-06-21 18:24:30,874 INFO    SenderThread:219238 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-06-21 18:24:30,874 INFO    SenderThread:219238 [sender.py:transition_state():626] send defer: 4
+2023-06-21 18:24:30,874 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: defer
+2023-06-21 18:24:30,874 INFO    HandlerThread:219238 [handler.py:handle_request_defer():170] handle defer: 4
+2023-06-21 18:24:30,874 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: defer
+2023-06-21 18:24:30,874 INFO    SenderThread:219238 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-06-21 18:24:30,874 INFO    SenderThread:219238 [sender.py:transition_state():626] send defer: 5
+2023-06-21 18:24:30,874 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: defer
+2023-06-21 18:24:30,874 INFO    HandlerThread:219238 [handler.py:handle_request_defer():170] handle defer: 5
+2023-06-21 18:24:30,874 DEBUG   SenderThread:219238 [sender.py:send():375] send: summary
+2023-06-21 18:24:30,875 INFO    SenderThread:219238 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-21 18:24:30,875 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: defer
+2023-06-21 18:24:30,875 INFO    SenderThread:219238 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-06-21 18:24:30,875 INFO    SenderThread:219238 [sender.py:transition_state():626] send defer: 6
+2023-06-21 18:24:30,875 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: defer
+2023-06-21 18:24:30,875 INFO    HandlerThread:219238 [handler.py:handle_request_defer():170] handle defer: 6
+2023-06-21 18:24:30,875 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: defer
+2023-06-21 18:24:30,875 INFO    SenderThread:219238 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-06-21 18:24:30,875 INFO    SenderThread:219238 [sender.py:transition_state():626] send defer: 7
+2023-06-21 18:24:30,875 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: status_report
+2023-06-21 18:24:30,875 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: defer
+2023-06-21 18:24:30,875 INFO    HandlerThread:219238 [handler.py:handle_request_defer():170] handle defer: 7
+2023-06-21 18:24:30,875 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: defer
+2023-06-21 18:24:30,876 INFO    SenderThread:219238 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-06-21 18:24:31,527 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:31,527 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:24:31,847 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-21 18:24:33,385 INFO    SenderThread:219238 [sender.py:transition_state():626] send defer: 8
+2023-06-21 18:24:33,385 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: poll_exit
+2023-06-21 18:24:33,385 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: defer
+2023-06-21 18:24:33,385 INFO    HandlerThread:219238 [handler.py:handle_request_defer():170] handle defer: 8
+2023-06-21 18:24:33,385 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: defer
+2023-06-21 18:24:33,386 INFO    SenderThread:219238 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-06-21 18:24:33,386 INFO    SenderThread:219238 [sender.py:transition_state():626] send defer: 9
+2023-06-21 18:24:33,386 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: defer
+2023-06-21 18:24:33,386 INFO    HandlerThread:219238 [handler.py:handle_request_defer():170] handle defer: 9
+2023-06-21 18:24:33,386 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: defer
+2023-06-21 18:24:33,386 INFO    SenderThread:219238 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-06-21 18:24:33,386 INFO    SenderThread:219238 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-06-21 18:24:33,527 INFO    Thread-12 :219238 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:24:33,528 INFO    SenderThread:219238 [dir_watcher.py:finish():395] scan: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files
+2023-06-21 18:24:33,528 INFO    SenderThread:219238 [dir_watcher.py:finish():409] scan save: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/conda-environment.yaml conda-environment.yaml
+2023-06-21 18:24:33,528 INFO    SenderThread:219238 [dir_watcher.py:finish():409] scan save: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/requirements.txt requirements.txt
+2023-06-21 18:24:33,528 INFO    SenderThread:219238 [dir_watcher.py:finish():409] scan save: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log output.log
+2023-06-21 18:24:33,528 INFO    SenderThread:219238 [dir_watcher.py:finish():409] scan save: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json wandb-summary.json
+2023-06-21 18:24:33,528 INFO    SenderThread:219238 [dir_watcher.py:finish():409] scan save: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/config.yaml config.yaml
+2023-06-21 18:24:33,528 INFO    SenderThread:219238 [dir_watcher.py:finish():409] scan save: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-metadata.json wandb-metadata.json
+2023-06-21 18:24:33,528 INFO    SenderThread:219238 [sender.py:transition_state():626] send defer: 10
+2023-06-21 18:24:33,531 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: defer
+2023-06-21 18:24:33,531 INFO    HandlerThread:219238 [handler.py:handle_request_defer():170] handle defer: 10
+2023-06-21 18:24:33,534 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: defer
+2023-06-21 18:24:33,534 INFO    SenderThread:219238 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-06-21 18:24:33,534 INFO    SenderThread:219238 [file_pusher.py:finish():168] shutting down file pusher
+2023-06-21 18:24:33,983 INFO    wandb-upload_1:219238 [upload_job.py:push():137] Uploaded file /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/requirements.txt
+2023-06-21 18:24:34,025 INFO    wandb-upload_0:219238 [upload_job.py:push():137] Uploaded file /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/conda-environment.yaml
+2023-06-21 18:24:34,076 INFO    wandb-upload_3:219238 [upload_job.py:push():137] Uploaded file /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/wandb-summary.json
+2023-06-21 18:24:34,099 INFO    wandb-upload_4:219238 [upload_job.py:push():137] Uploaded file /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/config.yaml
+2023-06-21 18:24:34,117 INFO    wandb-upload_2:219238 [upload_job.py:push():137] Uploaded file /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/files/output.log
+2023-06-21 18:24:34,318 INFO    Thread-11 (_thread_body):219238 [sender.py:transition_state():626] send defer: 11
+2023-06-21 18:24:34,318 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: defer
+2023-06-21 18:24:34,318 INFO    HandlerThread:219238 [handler.py:handle_request_defer():170] handle defer: 11
+2023-06-21 18:24:34,318 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: defer
+2023-06-21 18:24:34,318 INFO    SenderThread:219238 [sender.py:send_request_defer():622] handle sender defer: 11
+2023-06-21 18:24:34,318 INFO    SenderThread:219238 [file_pusher.py:join():173] waiting for file pusher
+2023-06-21 18:24:34,318 INFO    SenderThread:219238 [sender.py:transition_state():626] send defer: 12
+2023-06-21 18:24:34,318 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: defer
+2023-06-21 18:24:34,318 INFO    HandlerThread:219238 [handler.py:handle_request_defer():170] handle defer: 12
+2023-06-21 18:24:34,319 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: defer
+2023-06-21 18:24:34,319 INFO    SenderThread:219238 [sender.py:send_request_defer():622] handle sender defer: 12
+2023-06-21 18:24:34,536 INFO    SenderThread:219238 [sender.py:transition_state():626] send defer: 13
+2023-06-21 18:24:34,536 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: defer
+2023-06-21 18:24:34,536 INFO    HandlerThread:219238 [handler.py:handle_request_defer():170] handle defer: 13
+2023-06-21 18:24:34,536 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: defer
+2023-06-21 18:24:34,536 INFO    SenderThread:219238 [sender.py:send_request_defer():622] handle sender defer: 13
+2023-06-21 18:24:34,536 INFO    SenderThread:219238 [sender.py:transition_state():626] send defer: 14
+2023-06-21 18:24:34,536 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: defer
+2023-06-21 18:24:34,537 INFO    HandlerThread:219238 [handler.py:handle_request_defer():170] handle defer: 14
+2023-06-21 18:24:34,537 DEBUG   SenderThread:219238 [sender.py:send():375] send: final
+2023-06-21 18:24:34,537 DEBUG   SenderThread:219238 [sender.py:send():375] send: footer
+2023-06-21 18:24:34,537 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: defer
+2023-06-21 18:24:34,537 INFO    SenderThread:219238 [sender.py:send_request_defer():622] handle sender defer: 14
+2023-06-21 18:24:34,537 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-21 18:24:34,537 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: server_info
+2023-06-21 18:24:34,538 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: poll_exit
+2023-06-21 18:24:34,538 DEBUG   SenderThread:219238 [sender.py:send_request():402] send_request: server_info
+2023-06-21 18:24:34,539 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: get_summary
+2023-06-21 18:24:34,539 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: sampled_history
+2023-06-21 18:24:34,833 INFO    MainThread:219238 [wandb_run.py:_footer_history_summary_info():3476] rendering history
+2023-06-21 18:24:34,833 INFO    MainThread:219238 [wandb_run.py:_footer_history_summary_info():3508] rendering summary
+2023-06-21 18:24:34,833 INFO    MainThread:219238 [wandb_run.py:_footer_sync_info():3434] logging synced files
+2023-06-21 18:24:34,834 DEBUG   HandlerThread:219238 [handler.py:handle_request():144] handle_request: shutdown
+2023-06-21 18:24:34,834 INFO    HandlerThread:219238 [handler.py:finish():845] shutting down handler
+2023-06-21 18:24:35,538 INFO    WriterThread:219238 [datastore.py:close():298] close: /home/andrea/Documenti/Computer Science/Natural Language Procesing/nlp2023-hw2/wandb/run-20230621_182234-0phr612p/run-0phr612p.wandb
+2023-06-21 18:24:35,833 INFO    SenderThread:219238 [sender.py:finish():1550] shutting down sender
+2023-06-21 18:24:35,833 INFO    SenderThread:219238 [file_pusher.py:finish():168] shutting down file pusher
+2023-06-21 18:24:35,833 INFO    SenderThread:219238 [file_pusher.py:join():173] waiting for file pusher
