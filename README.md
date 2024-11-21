@@ -1,25 +1,12 @@
-# NLP 2023: Homework #2
+# WSDS - Word Sense Disambiguation via Siamese Network
+This repo contains the code for the second homework of the NLP 2023 course at Sapienza University of Rome.
 
-This is the second homework of the NLP 2023 course at Sapienza University of Rome.
+I implemented a Siamese network trained via contrastive learning, to tackle the Word Sense Disambiguation problem.
 
-#### Instructor
+I also implemented the paper [BEM](https://github.com/facebookresearch/wsd-biencoders) from Meta, and confronted the performances.
 
-* **Roberto Navigli**
-  * Webpage: http://www.diag.uniroma1.it/~navigli/
+A detailed report can be found in [PDF](https://github.com/Andreus00/WSDS/blob/main/nlp2023_hw2_v2.pdf)
 
-#### Teaching Assistants
-
-* **Edoardo Barba**
-* **Tommaso Bonomo**
-* **Karim Ghonim**
-* **Giuliano Martinelli**
-* **Francesco Molfese**
-* **Stefano Perrella**
-* **Lorenzo Proietti**
-
-#### Course Info
-
-* http://naviglinlp.blogspot.com/
 
 ## Requirements
 
@@ -32,21 +19,11 @@ This is the second homework of the NLP 2023 course at Sapienza University of Rom
 
 Unless otherwise stated, all commands here are expected to be run from the root directory of this project.
 
-## Setup Environment
-
-To evaluate your submissions we will be using Docker to remove any issue pertaining your code runnability. If *test.sh* runs on your machine (and you do not edit any **uneditable** file), it will run on ours as well; we cannot stress enough this point.
-
-Please note that, if it turns out it does not run on our side, and yet you claim it run on yours, the **only explanation** would be that you edited restricted files,
-messing up with the environment reproducibility: regardless of whether or not your code actually runs on your machine, if it does not run on ours,
-you will be failed automatically. **Only edit the allowed files**.
-
 To run *test.sh*, we need to perform two additional steps:
 
 * Install Docker
 * Setup a client
-
-For those interested, *test.sh* essentially setups a server exposing your model through a REST API and then queries this server, evaluating your model.
-
+  
 ### Install Docker
 
 ```bash
@@ -79,7 +56,3 @@ conda activate nlp2023-hw2
 bash test.sh data/coarse-grained/test_coarse_grained.json
 ```
 
-Actually, you can replace *data/coarse-grained/test_coarse_grained.json* to point to a different file, as far as the target file has the same format.
-
-If you hadn't changed *hw1/stud/model.py* yet when you run *test.sh*, the scores you just saw describe how a random baseline
-behaves. To have *test.sh* evaluate your model, follow the instructions in the slide.
